@@ -19,7 +19,6 @@ import helperMethods.WaitTypes;
 
 public class ContactsImport {
 
-	
 	private WebDriver driver;
 	private WaitTypes applyWait;
 	private ExtentTest test;
@@ -46,7 +45,7 @@ public class ContactsImport {
 
 	@FindBy(xpath = "//button[@id='ui_btnSampleDataExport']")
 	private WebElement downloadButtonPopUp;
-	
+
 	public void click_DownloadSampleFile() {
 		applyWait.waitForElementToBeClickable(downloadSampleFile, DefineConstants.explicitWait_30);
 		javascript.click(downloadSampleFile);
