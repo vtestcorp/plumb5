@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite 1">
+	<listeners>
+		<listener class-name="listeners.AnnotationTransformer" />
+	</listeners>
+	<test name="Contact Module">
+		<parameter name="browserType" value="chrome" />
+		<classes>
+			<class name="com.plumb5.contacts.testcases.TC_01_Create_Contact" />
+			<class name="com.plumb5.contacts.testcases.TC_02_Add_Remove_Group" />
+			<class name="com.plumb5.contacts.testcases.TC_03_Invalidate_Contact" />
+			<class name="com.plumb5.contacts.testcases.TC_04_Unsubscribe_Contact" />
+			<class name="com.plumb5.contacts.testcases.TC_05_Contacts_ExportReport" />
+			<class name="com.plumb5.contacts.testcases.TC_06_Search_Contact" />
+			<class name="com.plumb5.contacts.testcases.TC_07_Contact_Details" />
+			<class name="com.plumb5.contacts.testcases.TC_08_Create_Group" />
+			<class name="com.plumb5.contacts.testcases.TC_09_Create_Custom_Field" />
+			<class name="com.plumb5.contacts.testcases.TC_10_Email_Verification" />
+			<class name="com.plumb5.contacts.testcases.TC_11_Verify_Custom_Field_Present" />
+			<class name="com.plumb5.contacts.testcases.TC_12_Delete_Group" />
+			<class name="com.plumb5.contacts.testcases.TC_13_Download_Sample_File" />
+			<class name="com.plumb5.contacts.testcases.TC_14_Duplicate_Group" />
+			<class name="com.plumb5.contacts.testcases.TC_15_Edit_Group" />
+			<class name="com.plumb5.contacts.testcases.TC_16_Exclusive_Contact_List" />
+			<class name="com.plumb5.contacts.testcases.TC_17_Groups_Export" />
+			<class name="com.plumb5.contacts.testcases.TC_18_Validate_Group" />
+		</classes>
+	</test>
+</suite>

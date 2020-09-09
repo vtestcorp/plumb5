@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite 1]">
+  <parameter name="browserType" value="chrome"/>
+  <listeners>
+    <listener class-name="listeners.AnnotationTransformer"/>
+  </listeners>
+  <test name="Contact Module">
+    <parameter name="browserType" value="chrome"/>
+    <classes>
+      <class name="com.plumb5.contacts.testcases.TC_01_Create_Contact"/>
+    </classes>
+  </test> <!-- Contact Module -->
+</suite> <!-- Failed suite [Suite 1] -->
