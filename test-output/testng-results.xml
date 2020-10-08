@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite 1" duration-ms="54105" started-at="2020-09-09T13:29:07Z" finished-at="2020-09-09T13:30:01Z">
+  <suite name="Suite 1" duration-ms="19499" started-at="2020-10-08T07:58:44Z" finished-at="2020-10-08T07:59:04Z">
     <groups>
     </groups>
-    <test name="Contact Module" duration-ms="54105" started-at="2020-09-09T13:29:07Z" finished-at="2020-09-09T13:30:01Z">
-      <class name="com.plumb5.contacts.testcases.TC_01_Create_Contact">
-        <test-method status="PASS" signature="classInstitiate()[pri:0, instance:com.plumb5.contacts.testcases.TC_01_Create_Contact@13c78c0b]" name="classInstitiate" is-config="true" duration-ms="16" started-at="2020-09-09T18:59:07Z" finished-at="2020-09-09T18:59:07Z">
+    <test name="Mail Module" duration-ms="19499" started-at="2020-10-08T07:58:44Z" finished-at="2020-10-08T07:59:04Z">
+      <class name="com.plumb5.mail.testcases.TC_39_Dashboard_Home">
+        <test-method status="PASS" signature="classInstitiate()[pri:0, instance:com.plumb5.mail.testcases.TC_39_Dashboard_Home@7f560810]" name="classInstitiate" is-config="true" duration-ms="11" started-at="2020-10-08T13:28:44Z" finished-at="2020-10-08T13:28:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classInstitiate -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.plumb5.contacts.testcases.TC_01_Create_Contact@13c78c0b]" name="setUp" is-config="true" duration-ms="8930" started-at="2020-09-09T18:59:07Z" finished-at="2020-09-09T18:59:16Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.plumb5.mail.testcases.TC_39_Dashboard_Home@7f560810]" name="setUp" is-config="true" duration-ms="8640" started-at="2020-10-08T13:28:44Z" finished-at="2020-10-08T13:28:53Z">
           <params>
             <param index="0">
               <value>
@@ -22,26 +22,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="createContact()[pri:0, instance:com.plumb5.contacts.testcases.TC_01_Create_Contact@13c78c0b]" name="createContact" duration-ms="43432" started-at="2020-09-09T18:59:16Z" finished-at="2020-09-09T18:59:59Z">
+        <test-method status="PASS" signature="Create_Group()[pri:0, instance:com.plumb5.mail.testcases.TC_39_Dashboard_Home@7f560810]" name="Create_Group" duration-ms="10112" started-at="2020-10-08T13:28:53Z" finished-at="2020-10-08T13:29:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createContact -->
-        <test-method status="PASS" signature="checkResult(org.testng.ITestResult)[pri:0, instance:com.plumb5.contacts.testcases.TC_01_Create_Contact@13c78c0b]" name="checkResult" is-config="true" duration-ms="8" started-at="2020-09-09T18:59:59Z" finished-at="2020-09-09T18:59:59Z">
+        </test-method> <!-- Create_Group -->
+        <test-method status="PASS" signature="checkResult(org.testng.ITestResult)[pri:0, instance:com.plumb5.mail.testcases.TC_39_Dashboard_Home@7f560810]" name="checkResult" is-config="true" duration-ms="8" started-at="2020-10-08T13:29:03Z" finished-at="2020-10-08T13:29:03Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=createContact status=SUCCESS method=TC_01_Create_Contact.createContact()[pri:0, instance:com.plumb5.contacts.testcases.TC_01_Create_Contact@13c78c0b] output={null}]]]>
+                <![CDATA[[TestResult name=Create_Group status=SUCCESS method=TC_39_Dashboard_Home.Create_Group()[pri:0, instance:com.plumb5.mail.testcases.TC_39_Dashboard_Home@7f560810] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkResult -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.plumb5.contacts.testcases.TC_01_Create_Contact@13c78c0b]" name="tearDown" is-config="true" duration-ms="1707" started-at="2020-09-09T18:59:59Z" finished-at="2020-09-09T19:00:01Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.plumb5.mail.testcases.TC_39_Dashboard_Home@7f560810]" name="tearDown" is-config="true" duration-ms="717" started-at="2020-10-08T13:29:03Z" finished-at="2020-10-08T13:29:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.plumb5.contacts.testcases.TC_01_Create_Contact -->
-    </test> <!-- Contact Module -->
+      </class> <!-- com.plumb5.mail.testcases.TC_39_Dashboard_Home -->
+    </test> <!-- Mail Module -->
   </suite> <!-- Suite 1 -->
 </testng-results>

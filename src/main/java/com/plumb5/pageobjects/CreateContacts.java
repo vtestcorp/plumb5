@@ -972,7 +972,7 @@ public class CreateContacts {
 	}
 
 	public void verifyCustomField(String inputVerifyCustomField) {
-
+		
 		verifyCustomField = driver.findElement(By.xpath("//label[text()='" + inputVerifyCustomField + "']"));
 		applyWait.waitForElementToBeClickable(verifyCustomField, DefineConstants.explicitWait_30);
 

@@ -142,7 +142,7 @@ public class BaseClass {
 	@AfterClass
 	public void tearDown() throws IOException {
 		extent.flush();
-		driver.quit();
+//		driver.quit();
 	}
 
 	// @AfterSuite

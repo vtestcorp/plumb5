@@ -18,6 +18,13 @@ public class JavascriptClick {
 		javascriptExecutor = (JavascriptExecutor) driver;
 		javascriptExecutor.executeScript("arguments[0].click()", element);
 	}
+	
+	
+	public void sendKeys(WebElement element,String value) {
+		javascriptExecutor = (JavascriptExecutor) driver;
+		javascriptExecutor.executeScript("arguments[0].value='"+value+"';", element);
+	}
+	
 // border: 2px solid;
 	public void highLighterMethod(WebElement element) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;

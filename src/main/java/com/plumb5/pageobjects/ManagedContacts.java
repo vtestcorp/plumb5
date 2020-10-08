@@ -2,6 +2,7 @@ package com.plumb5.pageobjects;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.json.simple.JSONArray;
@@ -28,12 +29,17 @@ import helperMethods.WaitTypes;
 public class ManagedContacts {
 
 	private List<String> contactDetailsList;
+	private List<WebElement> contactDetailsListElements;
 	private WebDriver driver;
 	private WaitTypes applyWait;
 	private ExtentTest test;
 	private DropDown dropDown;
 	private JavascriptClick javascript;
 	private Screenshots screenshots;
+	private String oldEmail;
+	private String oldPhoneNumber;
+	private String newEmail;
+	private String newPhoneNumber;
 
 	public ManagedContacts(WebDriver driver, ExtentTest test) {
 		this.driver = driver;
@@ -43,7 +49,8 @@ public class ManagedContacts {
 		this.dropDown = new DropDown(driver);
 		javascript = new JavascriptClick(driver);
 		screenshots = new Screenshots(driver);
-
+		contactDetailsList = new ArrayList<String>();
+		contactDetailsListElements = new ArrayList<WebElement>();
 	}
 
 	@FindBy(xpath = "//button[@class='btn btn-primary btn-sm createbtn-pop']")
@@ -106,6 +113,15 @@ public class ManagedContacts {
 	// input[@placeholder='Search']
 	@FindBy(xpath = "//input[@id='e_input']")
 	private WebElement searchContact;
+
+	@FindBy(xpath = "//input[@id='e_input']//following::i[2]")
+	private WebElement filterBy_Button;
+
+	@FindBy(xpath = "//a[contains(text(),'Email Id')]")
+	private WebElement filterBy_EmailIDOption;
+
+	@FindBy(xpath = "//a[contains(text(),'Phone Number')]")
+	private WebElement filterBy_PhoneNumber;
 
 	@FindBy(xpath = "//table[@id='ui_tblReportData']")
 	private WebElement contactsTable;
@@ -409,19 +425,34 @@ public class ManagedContacts {
 		Log.info("Export Report download button is clicked");
 	}
 
+	public void select_FilterByPhoneNumber() {
+		try {
+
+			applyWait.waitForElementToBeClickable(filterBy_Button, DefineConstants.explicitWait_60).click();
+			Screenshots.takeScreenshot(driver, "User clicked filter by button");
+			test.log(Status.INFO, "User clicked filter by button");
+			Log.info("User clicked filter by button");
+
+			applyWait.waitForElementToBeClickable(filterBy_PhoneNumber, DefineConstants.explicitWait_60).click();
+			Screenshots.takeScreenshot(driver, "User selected filter by phone number option");
+			test.log(Status.INFO, "User selected filter by phone number option");
+			Log.info("User selected filter by phone number option");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
 	public void searchContact(String inputContactName) {
 		try {
 			Thread.sleep(3000L);
-			applyWait.waitForElementToBeClickable(searchContact, DefineConstants.explicitWait_60)
-					.sendKeys(inputContactName);
+			applyWait.waitForElementToBeClickable(searchContact, DefineConstants.explicitWait_60).clear();
+			searchContact.sendKeys(inputContactName);
 			searchContact.sendKeys(Keys.ENTER);
 			Screenshots.takeScreenshot(driver, inputContactName + " is entered");
 			test.log(Status.INFO, inputContactName + " is entered");
 			Log.info(inputContactName + " is entered");
 			Thread.sleep(3000L);
-		} catch (IOException e) {
-			e.printStackTrace();
-		} catch (InterruptedException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
@@ -433,11 +464,14 @@ public class ManagedContacts {
 			tableColums = tableRows.get(row).findElements(By.tagName("td"));
 			for (int column = 0; column < tableColums.size(); column++) {
 				String cellText = tableColums.get(column).getText();
+				contactDetailsList.add(cellText);
+				contactDetailsListElements.add(tableColums.get(column));
 				System.out.println("value is " + cellText);
 				test.log(Status.INFO, "value is " + cellText);
 				Log.info("value is " + cellText);
 			}
 		}
+
 		try {
 			Screenshots.takeScreenshot(driver, "Contact details fetched");
 		} catch (IOException e) {
@@ -445,6 +479,20 @@ public class ManagedContacts {
 		}
 		test.log(Status.INFO, "Contact details fetched");
 		Log.info("Contact details fetched");
+		System.out.println("Contact details from list are " + contactDetailsList);
+		System.out.println("Contact items from list are " + contactDetailsListElements);
+	}
+
+	public void openContact() {
+		try {
+			applyWait.waitForElementToBeClickable(contactDetailsListElements.get(0), DefineConstants.explicitWait_30).click();
+			contactDetailsListElements.get(0).click();
+			Screenshots.takeScreenshot(driver, "User open contact");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		test.log(Status.INFO, "User open contact");
+		Log.info("User open contact");
 	}
 
 	public void verifyInputValue(String inputEmailAddress) {
@@ -480,6 +528,154 @@ public class ManagedContacts {
 					test.log(Status.INFO, inputEmailAddress + " is not found");
 					Log.info(inputEmailAddress + " is not found");
 					Assert.assertTrue(false, inputEmailAddress + " is not found");
+				}
+			}
+		}
+	}
+
+	public void verify_OldEmail(String old_InputEmailAddress) {
+		applyWait.waitForElementToBeClickable(contactsTable, DefineConstants.explicitWait_60);
+		tableRows = contactsTable.findElements(By.tagName("tr"));
+
+		for (int row = 0; row < tableRows.size(); row++) {
+			tableColums = tableRows.get(row).findElements(By.tagName("td"));
+			for (int column = 0; column < tableColums.size(); column++) {
+				oldEmail = tableColums.get(column).getText();
+				if (oldEmail.equals(old_InputEmailAddress)) {
+					try {
+						System.out.println("Old email " + oldEmail + " is verified");
+						javascript.highLighterMethod(tableColums.get(column));
+						Screenshots.takeScreenshot(driver, "Old email " + oldEmail + " is verified");
+						test.log(Status.INFO, "Old email " + oldEmail + " is verified");
+						Log.info("Old email " + oldEmail + " is verified");
+						Assert.assertEquals(oldEmail, old_InputEmailAddress);
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+				}
+
+				else if (oldEmail.equals(DefineConstants.There_is_no_data_for_this_view)) {
+					try {
+						System.out.println(old_InputEmailAddress + "is not found");
+						javascript.highLighterMethod(tableColums.get(column));
+						Screenshots.takeScreenshot(driver, old_InputEmailAddress + " is not found");
+						test.log(Status.INFO, old_InputEmailAddress + " is not found");
+						Log.info(old_InputEmailAddress + " is not found");
+						Assert.assertEquals(DefineConstants.There_is_no_data_for_this_view, old_InputEmailAddress);
+					} catch (IOException e) {
+						e.printStackTrace();
+					}
+				}
+			}
+		}
+	}
+
+	public void verify_NewEmail(String new_InputEmailAddress) {
+		applyWait.waitForElementToBeClickable(contactsTable, DefineConstants.explicitWait_60);
+		tableRows = contactsTable.findElements(By.tagName("tr"));
+
+		for (int row = 0; row < tableRows.size(); row++) {
+			tableColums = tableRows.get(row).findElements(By.tagName("td"));
+			for (int column = 0; column < tableColums.size(); column++) {
+				newEmail = tableColums.get(column).getText();
+				if (newEmail.equals(new_InputEmailAddress)) {
+					try {
+						System.out.println("New email " + newEmail + " is verified");
+						javascript.highLighterMethod(tableColums.get(column));
+						Screenshots.takeScreenshot(driver, "New email " + newEmail + " is verified");
+						test.log(Status.INFO, "New email " + newEmail + " is verified");
+						Log.info("New email " + newEmail + " is verified");
+						Assert.assertEquals(newEmail, new_InputEmailAddress);
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+				}
+
+				else if (newEmail.equals(DefineConstants.There_is_no_data_for_this_view)) {
+					try {
+						System.out.println(new_InputEmailAddress + "is not found");
+						javascript.highLighterMethod(tableColums.get(column));
+						Screenshots.takeScreenshot(driver, new_InputEmailAddress + " is not found");
+						test.log(Status.INFO, new_InputEmailAddress + " is not found");
+						Log.info(new_InputEmailAddress + " is not found");
+						Assert.assertEquals(DefineConstants.There_is_no_data_for_this_view, new_InputEmailAddress);
+					} catch (IOException e) {
+						e.printStackTrace();
+					}
+				}
+			}
+		}
+	}
+
+	public void verify_OldPhoneNumber(String input_OldPhoneNumber) {
+		applyWait.waitForElementToBeClickable(contactsTable, DefineConstants.explicitWait_60);
+		tableRows = contactsTable.findElements(By.tagName("tr"));
+
+		for (int row = 0; row < tableRows.size(); row++) {
+			tableColums = tableRows.get(row).findElements(By.tagName("td"));
+			for (int column = 0; column < tableColums.size(); column++) {
+				oldPhoneNumber = tableColums.get(column).getText();
+				if (oldPhoneNumber.equals(input_OldPhoneNumber)) {
+					try {
+						System.out.println("Old Phone Number " + oldPhoneNumber + " is verified");
+						javascript.highLighterMethod(tableColums.get(column));
+						Screenshots.takeScreenshot(driver, "Old Phone Number " + oldPhoneNumber + " is verified");
+						test.log(Status.INFO, "Old PhoneNumber " + oldPhoneNumber + " is verified");
+						Log.info("Old PhoneNumber " + oldPhoneNumber + " is verified");
+						Assert.assertEquals(oldPhoneNumber, input_OldPhoneNumber);
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+				}
+
+				else if (oldPhoneNumber.equals(DefineConstants.There_is_no_data_for_this_view)) {
+					try {
+						System.out.println(input_OldPhoneNumber + "is not found");
+						javascript.highLighterMethod(tableColums.get(column));
+						Screenshots.takeScreenshot(driver, input_OldPhoneNumber + " is not found");
+						test.log(Status.INFO, input_OldPhoneNumber + " is not found");
+						Log.info(input_OldPhoneNumber + " is not found");
+						Assert.assertEquals(DefineConstants.There_is_no_data_for_this_view, input_OldPhoneNumber);
+					} catch (IOException e) {
+						e.printStackTrace();
+					}
+				}
+			}
+		}
+	}
+
+	public void verify_NewPhoneNumber(String input_NewPhoneNumber) {
+		applyWait.waitForElementToBeClickable(contactsTable, DefineConstants.explicitWait_60);
+		tableRows = contactsTable.findElements(By.tagName("tr"));
+
+		for (int row = 0; row < tableRows.size(); row++) {
+			tableColums = tableRows.get(row).findElements(By.tagName("td"));
+			for (int column = 0; column < tableColums.size(); column++) {
+				newPhoneNumber = tableColums.get(column).getText();
+				if (newPhoneNumber.equals(input_NewPhoneNumber)) {
+					try {
+						System.out.println("New Phone Number " + newPhoneNumber + " is verified");
+						javascript.highLighterMethod(tableColums.get(column));
+						Screenshots.takeScreenshot(driver, "New Phone Number " + newPhoneNumber + " is verified");
+						test.log(Status.INFO, "New Phone Number " + newPhoneNumber + " is verified");
+						Log.info("New Phone Number " + newPhoneNumber + " is verified");
+						Assert.assertEquals(newPhoneNumber, input_NewPhoneNumber);
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+				}
+
+				else if (newPhoneNumber.equals(DefineConstants.There_is_no_data_for_this_view)) {
+					try {
+						System.out.println(input_NewPhoneNumber + "is not found");
+						javascript.highLighterMethod(tableColums.get(column));
+						Screenshots.takeScreenshot(driver, input_NewPhoneNumber + " is not found");
+						test.log(Status.INFO, input_NewPhoneNumber + " is not found");
+						Log.info(input_NewPhoneNumber + " is not found");
+						Assert.assertEquals(DefineConstants.There_is_no_data_for_this_view, input_NewPhoneNumber);
+					} catch (IOException e) {
+						e.printStackTrace();
+					}
 				}
 			}
 		}

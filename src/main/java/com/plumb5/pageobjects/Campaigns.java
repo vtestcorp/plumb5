@@ -39,6 +39,12 @@ public class Campaigns {
 
 	@FindBy(linkText = "Draft")
 	private WebElement draft;
+	
+	@FindBy(linkText = "Triggers")
+	private WebElement triggers;
+	
+	@FindBy(xpath = "//button[@id='selectdateDropdown']")
+	private WebElement showingDataFor;
 
 	@FindBy(linkText = "Create Draft")
 	private WebElement create_Draft;
@@ -95,6 +101,34 @@ public class Campaigns {
 		}
 	}
 	
+	public void click_Triggers() {
+		try {
+			applyWait.waitForElementToBeClickable(triggers, DefineConstants.explicitWait_30);
+			javascriptClick.click(triggers);
+			Screenshots.takeScreenshot(driver, "User clicked triggers tab");
+			test.log(Status.INFO, "User clicked triggers tab");
+			Log.info("User clicked triggers tab");
+			Thread.sleep(3000L);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void select_ShowingDataFor(String inputTimePeriod) {
+		try {
+			applyWait.waitForElementToBeClickable(showingDataFor, DefineConstants.explicitWait_30).click();
+			WebElement timeperiod=driver.findElement(By.linkText(inputTimePeriod));
+			timeperiod.click();
+			Screenshots.takeScreenshot(driver, "User selects time period");
+			test.log(Status.INFO, "User selects time period");
+			Log.info("User selects time period");
+			Thread.sleep(5000L);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+
 	public void click_CreateScheduled() {
 		try {
 			applyWait.waitForElementToBeClickable(CreateScheduled_Button, DefineConstants.explicitWait_30);
@@ -249,6 +283,7 @@ public class Campaigns {
 				System.out.println(errorMessage.getText() + " is displayed");
 				test.log(Status.INFO, errorMessage.getText() + "  is displayed");
 				Log.info(errorMessage.getText() + "  is displayed");
+				Assert.assertEquals(successMessage, errorMessage.getText());
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -270,15 +305,15 @@ public class Campaigns {
 	public void verifyInputValue(String draftName) {
 		applyWait.waitForElementToBeClickable(campaignTable, DefineConstants.explicitWait_60);
 		tableRows = campaignTable.findElements(By.tagName("tr"));
-
+		System.out.println("value is " + draftName);
 		for (int row = 0; row < tableRows.size(); row++) {
 			tableColums = tableRows.get(row).findElements(By.tagName("td"));
 			for (int column = 0; column < tableColums.size(); column++) {
 				String cellText = tableColums.get(column).getText();
-				if (cellText.equals(draftName)) {
-					System.out.println("value is " + cellText);
+				System.out.println("cell textx is " + cellText);
+				if (cellText.equals(draftName)) {					
+					System.out.println("value is: " + cellText);
 					javascriptClick.highLighterMethod(tableColums.get(column));
-					Assert.assertTrue(true, draftName + " is verified");
 					test.log(Status.INFO, "value is " + cellText);
 					Log.info("value is " + cellText);
 					try {
@@ -288,9 +323,10 @@ public class Campaigns {
 					}
 					test.log(Status.INFO, draftName + " is verified");
 					Log.info(draftName + " is verified");
+					Assert.assertTrue(true, draftName + " is verified");
 				}
 
-				else if (cellText.equals("There is no data for this view")) {
+				else if (cellText.equals(DefineConstants.There_is_no_data_for_this_view)) {
 					try {
 						javascriptClick.highLighterMethod(tableColums.get(column));
 						Screenshots.takeScreenshot(driver, draftName + " is not found");

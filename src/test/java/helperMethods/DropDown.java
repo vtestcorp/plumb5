@@ -22,6 +22,16 @@ public class DropDown {
 		}
 		return Element;
 	}
+	
+	public WebElement selectByValue(WebElement Element, String text) {
+		try {
+			select = new Select(Element);
+			select.selectByValue(text);
+		} catch (Exception e) {
+			e.getMessage();
+		}
+		return Element;
+	}
 
 	public WebElement deSelectByVisibleText(WebElement Element, String text) {
 		try {

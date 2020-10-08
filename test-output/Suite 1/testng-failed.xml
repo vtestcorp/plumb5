@@ -5,10 +5,10 @@
   <listeners>
     <listener class-name="listeners.AnnotationTransformer"/>
   </listeners>
-  <test name="Contact Module">
+  <test name="Mail Module">
     <parameter name="browserType" value="chrome"/>
     <classes>
-      <class name="com.plumb5.contacts.testcases.TC_01_Create_Contact"/>
+      <class name="com.plumb5.mail.testcases.TC_39_Dashboard_Home"/>
     </classes>
-  </test> <!-- Contact Module -->
+  </test> <!-- Mail Module -->
 </suite> <!-- Failed suite [Suite 1] -->
