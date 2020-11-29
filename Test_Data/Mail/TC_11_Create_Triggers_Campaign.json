@@ -1,0 +1,14 @@
+{
+	"Trigger Identifier": "Trigger 15",
+	"Campaign Name": "tst-1",
+	"Content Type": "Promotional(Explicit)",
+	"Delivery Time": "Daily",
+	"From Name":"abc",
+	"From Address":"admin@plumb5.com",
+	"Reply to Address":"",
+	"Subject Line":"subject test",
+	"Select Template":"Dev Test",
+	"Test Campaign Radio Button": "Individual",
+	"Test Campaign Value": "abc@gmail.com",
+	"Success Message":"The trigger has been saved successfully"
+}

@@ -1,0 +1,19 @@
+{
+	"Campaign Name": "campaign 1",
+	"Template Name": "Template Duplicate 3",
+	"Template Description": "Template Duplicate 3 description",
+	"Notification Type": "Text with Banner",
+	"Template Title": "Template Duplicate title 3",
+	"Template Message": "Template Duplicate 3 message",
+	"Page Url": "http://www.abc.com",
+	"User Attribute": "Name",
+	"File Path": "Files To Upload\\Template Image.png",
+	"Banner Path": "Files To Upload\\Banner Image.jpg",
+	"Duplicate Campaign Name": "campaign 1",
+	"Duplicate Template Name": "Template Duplicate 3 Duplicate",
+	"Duplicate Template Description": "Template Duplicate 3 Duplicate Description",
+	"Duplicate Template Title": "Template Duplicate title 3",
+	"Duplicate Template Message": "Template Duplicate 3 message",
+	"Duplicate File Path": "Files To Upload\\Template Image.png",
+	"Duplicate Page Url": "http://www.duplicate.com"
+}

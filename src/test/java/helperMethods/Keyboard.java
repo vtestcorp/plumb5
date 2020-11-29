@@ -31,7 +31,18 @@ public class Keyboard {
 		}
 	}
 
-	public static void uploadFileWithRobot(String imagePath) {
+	public static void pressTab() {
+		try {
+			r = new Robot();
+			r.keyPress(KeyEvent.VK_TAB);
+			r.keyRelease(KeyEvent.VK_TAB);
+		} catch (Exception e) {
+			e.getMessage();
+		}
+	}
+
+	
+	public static void uploadFileWithRobot(String imagePath) {		
 		StringSelection stringSelection = new StringSelection(imagePath);
 		Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
 		clipboard.setContents(stringSelection, null);
@@ -53,6 +64,6 @@ public class Keyboard {
 		robot.keyRelease(KeyEvent.VK_CONTROL);
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.delay(150);
-		robot.keyRelease(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);		
 	}
 }

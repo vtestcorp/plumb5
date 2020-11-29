@@ -291,7 +291,8 @@ public class Campaigns {
 	}
 
 	public void search_Draft(String draftName) {
-		applyWait.waitForElementToBeClickable(search_Draft, DefineConstants.explicitWait_30).sendKeys(draftName);
+		applyWait.waitForElementToBeClickable(search_Draft, DefineConstants.explicitWait_30).clear();
+		search_Draft.sendKeys(draftName);
 		search_Draft.sendKeys(Keys.ENTER);
 		try {
 			Screenshots.takeScreenshot(driver, "User searched draft name");

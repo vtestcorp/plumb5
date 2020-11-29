@@ -1,0 +1,12 @@
+{
+	"Account": "Plumb5V6",
+	"IP Exclude Traffic From": "Ip:2.62.64.47",
+	"Subdirectory Exclude Traffic From": "Direc one",
+	"City Exclude Traffic From": "Pune",
+	"Country Exclude Traffic From": "India",
+	"IP Include Traffic From": "Ip:2.62.64.48",
+	"Subdirectory Include Traffic From": "Direc two",
+	"City Include Traffic From": "Pune",
+	"Country Include Traffic From": "India",
+	"Success Message":"Updated sucessfully"
+}

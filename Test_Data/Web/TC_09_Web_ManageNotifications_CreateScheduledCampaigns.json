@@ -1,0 +1,13 @@
+{
+	"Campaign Identier": "Scheduled Campaign 51",
+	"Campaign Name": "campaign 1",
+	"Template Name": "Template Duplicate 1",
+	"Send To": [
+		"Test"
+	],
+	"Scheduled Date": "30",
+	"Scheduled Time": "12:30:PM",
+	"Test Campaign Radio Button": "Individual",
+	"Test Campaign Value": "machine 123",
+	"Time Period": "Next Month"
+}

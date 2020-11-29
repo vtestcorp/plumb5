@@ -1,0 +1,31 @@
+{
+	"Campaign Name": "campaign 1",
+	"Template Name": "Create Scheduled Template 1",
+	"Template Description": "Create Scheduled Template 1 description",
+	"Template Message":"Create Scheduled Template 1 message",
+	"Page Url":"www.Scheduledtemplate1.com",
+	
+	"Campaign Identier":"Scheduled Campaign 5",
+	"Campaign Type":"Promotional(Explicit)",
+	"Send To":[
+		"My Group"
+	],
+	"Batch Type":"Single",
+	"Scheduled Date": "30",
+	"Scheduled Time": "12:30:PM",
+	"Test Campaign Radio Button": "Group",
+	"Test Campaign Value":"My Group",
+	"Time Period":"Next Month",
+	
+	"Edit Campaign Name": "campaign 1",
+	"Edit Template Name": "Create Scheduled Template 2",
+	"Edit Campaign Type": "Transactional(Implicit)",
+	"Edit Send To":[
+		"My Group"
+	],
+	"Edit Batch Type":"Single",
+	"Edit Scheduled Date": "31",
+	"Edit Scheduled Time": "12:40:PM",
+	"Edit Test Campaign Radio Button": "Group",
+	"Edit Test Campaign Value": "My Group"
+}

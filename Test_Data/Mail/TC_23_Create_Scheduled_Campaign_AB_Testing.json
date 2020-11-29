@@ -1,0 +1,49 @@
+{
+    "Provider Name": "elastic mail",
+	"Promotional Account Name": "admin@plumb5.com",
+	"Promotional API Key": "FB691BBF5445B14CAD290827184A8E90B02C85C49356346E7FB8080AC94790C2AA53C57BFD4390F712A66C85E2F8AA28",
+	"Promotional Configuration Url": "https://api.elasticemail.com/v2/email/send",	
+	"Transactional Account Name": "admin@plumb5.com",
+	"Transactional API Key": "FB691BBF5445B14CAD290827184A8E90B02C85C49356346E7FB8080AC94790C2AA53C57BFD4390F712A66C85E2F8AA28",
+	"Transactional Configuration Url": "https://api.elasticemail.com/v2/email/send",
+	"Service Provider Success Message": "Message is Service Provider Added Successfully",
+
+	"Campaign Name": "campaign 81",
+	"Campaign Description": "campaign 81 description",
+    "Success Message": "Added successfully.",
+    
+    "First Template Select Name": "Blank Template",
+	"First Template Name": "Template 1 Campaign 81",
+	"First Template Description": "Template 1 Campaign 81 description",
+	"First Template Type":"Transactional",
+	"First Template From Email Id":"admin@plumb5.com",
+	"First Template From Name":"Plumb 5",
+	"First Template Subject":"Template One Subject",
+	"First Template Title":"WOW! PERFECT, YOU CAN SEND",
+	
+	"Second Template Select Name": "Blank Template",
+	"Second Template Name": "Template 2 Campaign 81",
+	"Second Template Description": "Template 2 Campaign 81 description",
+	"Second Template Type":"Promotional",
+	"Second Template From Email Id":"admin@plumb5.com",
+	"Second Template From Name":"Plumb 5",
+	"Second Template Subject":"Template Two Subject",
+	"Second Template Title":"WOW! PERFECT, YOU CAN SEND",
+	
+	"Campaign Identier": "Schedule Campaign 81",	
+	"Campaign Type": "Promotional",
+	"Send To": [
+		"ShiftGroup"
+	],
+	"Merged Group Name": "Schedule Campaign 81 merge description",
+	"Merged Group Description": "Schedule Campaign 81 merge description",
+	"From Name":"Plumb 5",
+	"From Address": "admin@plumb5.com",
+	"Subject Line": "Plumb 5",
+	"Select Template": "Dev Test",
+	"Scheduled Date": "30",
+	"Scheduled Time": "12:31:PM",
+	"Test Campaign Radio Button": "Group",
+	"Test Campaign Value": "ShiftGroup",
+	"Time Period": "Next Month"
+}

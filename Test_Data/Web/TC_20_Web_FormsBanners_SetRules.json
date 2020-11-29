@@ -1,0 +1,14 @@
+{
+	"Visitor Type": "Customer",
+	"Visitor Belongs": "Not Belongs",
+	"Group Name": "Test",
+	"If The Visitor Session Is": "Is Not",
+	"If The Visitor Session Is Ex": "2",
+	"If The Visitor Page Depth": "Is Not",
+	"If The Visitor Page Depth Ex": "1",
+	"Social Status":"Inactive",
+	"Score Dropdown":"Equal",
+	"Score Value":"2",
+	"If the visitor's response to your mail campaigns are":"Responsive",
+	"Success Message": "The Details has been saved successfully"
+}

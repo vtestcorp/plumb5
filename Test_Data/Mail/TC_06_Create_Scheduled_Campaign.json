@@ -1,0 +1,39 @@
+{
+	"Provider Name": "elastic mail",
+	"Promotional Account Name": "admin@plumb5.com",
+	"Promotional API Key": "FB691BBF5445B14CAD290827184A8E90B02C85C49356346E7FB8080AC94790C2AA53C57BFD4390F712A66C85E2F8AA28",
+	"Promotional Configuration Url": "https://api.elasticemail.com/v2/email/send",	
+	"Transactional Account Name": "admin@plumb5.com",
+	"Transactional API Key": "FB691BBF5445B14CAD290827184A8E90B02C85C49356346E7FB8080AC94790C2AA53C57BFD4390F712A66C85E2F8AA28",
+	"Transactional Configuration Url": "https://api.elasticemail.com/v2/email/send",
+	"Service Provider Success Message": "Message is Service Provider Added Successfully",
+	
+	"Campaign Name": "campaign 73",
+	"Campaign Description": "campaign 73 description",
+	"Success Message": "Added successfully.",
+	
+	"Select Name": "Promo Template",
+	"Template Name":"Template One Campaign 73",
+	"Template Description":"Template One Campaign 73 description",
+	
+	"Type":"Promotional",
+	"From Email Id":"admin@plumb5.com",
+	"From Name":"Plumb 5",
+	"Subject":"Subject One",
+	"Title":"GOOD STUFF. YOUR EMAIL IS ALMOST PERFECT",
+	
+	"Campaign Identier": "Schedule Campaign 73",
+	"Campaign Type": "Promotional",
+	"Send To": [
+		"ShiftGroup"
+	],
+	"Merged Group Name": "merge description opqoo",
+	"Merged Group Description": "merge description opqoo",
+	"From Address": "admin@plumb5.com",
+	"Subject Line": "plumb 5",
+	"Scheduled Date": "28",
+	"Scheduled Time": "12:30:PM",
+	"Test Campaign Radio Button": "Group",
+	"Test Campaign Value": "ShiftGroup",
+	"Time Period": "Next Month"
+}

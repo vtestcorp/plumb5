@@ -1,7 +1,6 @@
 package com.plumb5.pageobjects;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -26,7 +25,7 @@ public class Reports {
 	private ExtentTest test;
 	private JavascriptClick javascriptClick;
 	private DropDown dropDown;
-	WebElement showingDataForValue;
+	private WebElement showingDataForValue;
 
 	public Reports(WebDriver driver, ExtentTest test) {
 		this.driver = driver;

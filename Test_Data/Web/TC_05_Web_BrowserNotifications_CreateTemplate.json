@@ -1,0 +1,11 @@
+{
+	"Campaign Name": "campaign 1",
+	"Template Name": "Template 2",
+	"Template Description": "Template  description",
+	"Notification Type":"Text with Banner",
+	"Template Title":"Template title",
+	"Template Message":"Template 2 message",
+	"Page Url":"http://www.abc.com",
+	"User Attribute":"Name",
+	"File Path":"Files To Upload\\template image.png"
+}

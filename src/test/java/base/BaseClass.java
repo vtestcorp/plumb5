@@ -118,24 +118,16 @@ public class BaseClass {
 	@AfterMethod(timeOut = 10000L, alwaysRun = true)
 	public void checkResult(ITestResult result) throws IOException {
 		if (result.getStatus() == ITestResult.FAILURE) {
-			atest += "    " + count + "     " + result.getTestClass().getName() + "." + result.getName()
-					+ " - Failed\n";
+			atest += "    " + count + "     " + result.getTestClass().getName() + "." + result.getName() + " - Failed\n";
 			test.log(Status.FAIL, MarkupHelper.createLabel(result.getName() + " Test Case FAILED", ExtentColor.RED));
 			test.fail(result.getThrowable());
 			test.addScreenCaptureFromPath(Screenshots.takeScreenshot(driver, result.getMethod().getMethodName()));
 		} else if (result.getStatus() == ITestResult.SUCCESS) {
-			atest += "    " + count + "     " + result.getTestClass().getName() + "." + result.getName()
-					+ " - Passed\n";
+			atest += "    " + count + "     " + result.getTestClass().getName() + "." + result.getName() + " - Passed\n";
 			test.log(Status.PASS, MarkupHelper.createLabel(result.getName() + " Test Case PASSED", ExtentColor.GREEN));
-//			test.pass(result.getThrowable());
-//			test.addScreenCaptureFromPath(Screenshots.takeScreenshot(driver, result.getMethod().getMethodName()));
 		} else {
-			atest += "    " + count + "     " + result.getTestClass().getName() + "." + result.getName()
-					+ " - Skipped\n";
-			test.log(Status.SKIP,
-					MarkupHelper.createLabel(result.getName() + " Test Case SKIPPED", ExtentColor.YELLOW));
-			// test.addScreenCaptureFromPath(Screenshots.takeScreenshot(driver,
-			// result.getMethod().getMethodName()));
+			atest += "    " + count + "     " + result.getTestClass().getName() + "." + result.getName() + " - Skipped\n";
+			test.log(Status.SKIP, MarkupHelper.createLabel(result.getName() + " Test Case SKIPPED", ExtentColor.YELLOW));
 		}
 	}
 

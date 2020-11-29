@@ -1,0 +1,62 @@
+{
+    "Provider Name": "elastic mail",
+	"Promotional Account Name": "admin@plumb5.com",
+	"Promotional API Key": "FB691BBF5445B14CAD290827184A8E90B02C85C49356346E7FB8080AC94790C2AA53C57BFD4390F712A66C85E2F8AA28",
+	"Promotional Configuration Url": "https://api.elasticemail.com/v2/email/send",	
+	"Transactional Account Name": "admin@plumb5.com",
+	"Transactional API Key": "FB691BBF5445B14CAD290827184A8E90B02C85C49356346E7FB8080AC94790C2AA53C57BFD4390F712A66C85E2F8AA28",
+	"Transactional Configuration Url": "https://api.elasticemail.com/v2/email/send",
+	"Service Provider Success Message": "Message is Service Provider Added Successfully",
+	
+	"Campaign Name": "Campaign Duplicate 11",
+	"Campaign Description": "Campaign Duplicate 11 description",
+	"Success Message": "Added successfully.",
+	
+	"Select Name": "Promo Template",
+	"Template Name":"Template One Campaign Duplicate 11",
+	"Template Description":"Template One Campaign Duplicate 11 description",
+	
+	"Type":"Promotional",
+	"From Email Id":"admin@plumb5.com",
+	"From Name":"Plumb 5",
+	"Subject":"Subject One",
+	"Title":"GOOD STUFF. YOUR EMAIL IS ALMOST PERFECT",
+	
+	"Campaign Identier": "Schedule Campaign Duplicate 11",
+	"Campaign Type": "Promotional",
+	"Send To": [
+		"ShiftGroup"
+	],
+	"Merged Group Name": "merge description opqoo",
+	"Merged Group Description": "merge description opqoo",
+	"From Address": "admin@plumb5.com",
+	"Subject Line": "plumb 5",
+	"Scheduled Date": "28",
+	"Scheduled Time": "12:30:PM",
+	"Test Campaign Radio Button": "Group",
+	"Test Campaign Value": "ShiftGroup",
+	"Time Period": "Next Month",
+
+
+	"Duplicate Campaign Identier": "Schedule Campaign Duplicate 11 Copy",
+	"Duplicate Campaign Name":"Campaign Duplicate 11",
+	"Duplicate Select Template": "Template One Campaign Duplicate 11",
+	"Duplicate Campaign Type": "Promotional",
+	"Duplicate Send To": [
+		"ShiftGroup"
+	],
+	"Duplicate Merged Group Name": "merge description khgqwe",
+	"Duplicate Merged Group Description": "merge description khgqwe",
+	"Duplicate From Name": "test from name",
+	"Duplicate From Address": "admin@plumb5.com",
+	"Duplicate Subject Line": "test subject line copy",
+	"Duplicate Scheduled Date": "20",
+	"Duplicate Scheduled Time": "09:30:PM",
+	"Duplicate Test Campaign Radio Button": "Individual",
+	"Duplicate Test Campaign Value": "abc@gmail.com",
+	"Duplicate Time Period": "Next Month",
+	
+	"Duplicate Name": "Schedule Campaign Duplicate 11 Copy",
+	"Duplicate Verification Message": "",
+	"Duplicate Success Message": "Added successfully."
+}

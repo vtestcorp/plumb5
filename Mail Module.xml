@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite 1">
+	<listeners>
+		<listener class-name="listeners.AnnotationTransformer" />
+	</listeners>
+	<test name="Mail Module">
+		<parameter name="browserType" value="chrome" />
+		<classes>
+			     <!-- <class name="com.plumb5.mail.testcases.TC_01_Create_Draft_Campaign" /> 
+			      <class name="com.plumb5.mail.testcases.TC_02_Search_Draft_Campaign" /> 
+				 <class name="com.plumb5.mail.testcases.TC_03_Edit_Draft_Campaign" />  
+				 <class name="com.plumb5.mail.testcases.TC_04_Duplicate_Draft_Campaign" /> 
+				 <class name="com.plumb5.mail.testcases.TC_05_Delete_Draft_Campaign" />
+			     <class name="com.plumb5.mail.testcases.TC_06_Create_Scheduled_Campaign" />
+			     <class name="com.plumb5.mail.testcases.TC_07_Search_Scheduled_Campaign" />
+			     <class name="com.plumb5.mail.testcases.TC_08_Delete_Scheduled_Campaign" /> -->
+			     <class name="com.plumb5.mail.testcases.TC_09_Edit_Scheduled_Campaign" />
+			     <!-- <class name="com.plumb5.mail.testcases.TC_10_Duplicate_Scheduled_Campaign" />
+			     <class name="com.plumb5.mail.testcases.TC_11_Create_Triggers_Campaign" />
+			     <class name="com.plumb5.mail.testcases.TC_12_Search_Triggers_Campaign" />
+			     <class name="com.plumb5.mail.testcases.TC_13_Edit_Triggers_Campaign" />
+			     <class name="com.plumb5.mail.testcases.TC_14_Duplicate_Triggers_Campaign"/>
+			     <class name="com.plumb5.mail.testcases.TC_15_Change_Status_Triggers_Campaign" />
+			     <class name="com.plumb5.mail.testcases.TC_16_Delete_Triggers_Campaign"/>	
+			     <class name="com.plumb5.mail.testcases.TC_17_Create_Templates"/>
+			     <class name="com.plumb5.mail.testcases.TC_18_Duplicate_Template"/>
+			     <class name="com.plumb5.mail.testcases.TC_19_Spam_Score_Template"/>
+			     <class name="com.plumb5.mail.testcases.TC_20_Delete_Template"/>
+			     <class name="com.plumb5.mail.testcases.TC_21_Download_Template"/>
+			     <class name="com.plumb5.mail.testcases.TC_22_Edit_Template"/>
+			     <class name="com.plumb5.mail.testcases.TC_23_Create_Scheduled_Campaign_AB_Testing"/>
+			     <class name="com.plumb5.mail.testcases.TC_24_Settings_Configuration_Add_Senders_Email_Delete_Senders_Email"/>
+			     <class name="com.plumb5.mail.testcases.TC_25_Settings_Configuration_Add_Senders_Email_Update_Senders_Email"/>
+			     <class name="com.plumb5.mail.testcases.TC_26_Settings_Configuration_Add_ESP_Edit_ESP"/> 
+			     <class name="com.plumb5.mail.testcases.TC_27_Settings_Configuration_Add_ESP_Delete_ESP"/>
+			     <class name="com.plumb5.mail.testcases.TC_28_Settings_Configuration_Add_ESP_Validate_ESP"/>	 
+			     <class name="com.plumb5.mail.testcases.TC_29_Settings_Configuration_Custom_Unsubscribe"/>
+			     <class name="com.plumb5.mail.testcases.TC_30_Settings_Spam_Score_Settings_Add_Provider_Name"/>	
+			     <class name="com.plumb5.mail.testcases.TC_31_Settings_Email_Verification_Settings_Add_Provider_Name"/>
+			     <class name="com.plumb5.mail.testcases.TC_32_Settings_Email_Verification_Settings_Update_Provider_Name"/>
+			     <class name="com.plumb5.mail.testcases.TC_33_Reports_Filter_By_Campaigns"/>
+			     <class name="com.plumb5.mail.testcases.TC_34_Reports_TriggerCampaigns_FilterByCampaigns"/>
+			     <class name="com.plumb5.mail.testcases.TC_35_Reports_A_B_Testing_FilterByCampaigns"/> 	     	
+			     <class name="com.plumb5.mail.testcases.TC_36_Reports_Hard_Bounced_FilterByReason_Download"/>
+			     <class name="com.plumb5.mail.testcases.TC_37_Reports_Soft_Bounced_FilterByReason_Download"/>
+			     <class name="com.plumb5.mail.testcases.TC_38_Reports_Alerts_Notifications"/>			     
+			     <class name="com.plumb5.mail.testcases.TC_39_Dashboard_Home"/>			     		      			     			     	     			     						     			     			         	     			     		     	
+				 <class name="com.plumb5.mail.testcases.TC_40_Create_Templates_UploadTemplate"/>  -->	
+		</classes>
+	</test>
+</suite>

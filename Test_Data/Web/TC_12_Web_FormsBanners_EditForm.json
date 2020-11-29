@@ -1,0 +1,14 @@
+{
+	"Edit Form Title": "Edit title",
+	"Add Field Name": "Edit Name",
+	"Add Field Mapping": "Name",
+	"Mandatory": "No",
+	"Email Add Field Name": "Edit Email",
+	"Email Add Field Mapping": "EmailId",
+	"Email Mandatory": "yes",
+	"Phone Add Field Name": "Edit Phone",
+	"Phone Add Field Mapping": "PhoneNumber",
+	"Phone Mandatory": "yes",
+	"Submit Add Field Name": "Edit Submit",
+	"Success Message": "The Details has been saved successfully"
+}

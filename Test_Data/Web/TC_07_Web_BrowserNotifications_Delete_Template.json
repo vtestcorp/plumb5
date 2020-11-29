@@ -1,0 +1,13 @@
+{
+	"Campaign Name": "campaign 1",
+	"Template Name": "Template Delete 12",
+	"Template Description": "Template Delete 12 description",
+	"Notification Type":"Text with Banner",
+	"Template Title":"Template Delete title 12",
+	"Template Message":"Template Delete 12 message",
+	"Page Url":"http://www.abc.com",
+	"User Attribute":"Name",
+	"File Path":"Files To Upload\\Template Image.png",
+	"Banner Path":"Files To Upload\\Banner Image.jpg",
+	"Delete Success Message":"Archive successfully."
+}

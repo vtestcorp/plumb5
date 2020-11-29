@@ -1,0 +1,8 @@
+{
+	"Role Name": "Head Admin",
+	"Role Description":"described by admin",
+	"Success Message":"Saved successfully",
+	"Update Role Description":"update described by admin",
+	"Update Success Message":"UpdatedRoles",
+	"Delete Success Message":"Deleted successfully"
+}

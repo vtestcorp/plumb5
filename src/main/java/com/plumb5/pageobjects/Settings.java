@@ -1,6 +1,5 @@
 package com.plumb5.pageobjects;
 
-import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -133,6 +132,9 @@ public class Settings {
 	@FindBy(id = "ui_btnSubmit")
 	private WebElement submitButton;
 
+	@FindBy(xpath = "//button[@id='ui_btnSubmit']//following::button[1]")
+	private WebElement cancelButton;
+	
 	@FindBy(xpath = "//div[contains(text(),'Spam Score Settings')]")
 	private WebElement spamScoreSettings;
 
@@ -157,7 +159,7 @@ public class Settings {
 	@FindBy(xpath = "//a[contains(text(),'Provider Settings')]")
 	private WebElement providerSettingsEmailVerificationSettings;
 
-	@FindBy(xpath = "//label[contains(text(),'Api Key')]//following::input[1]")
+	@FindBy(xpath = "//input[@id='ui_txt_MailVerifyApiKey']")
 	private WebElement apiKeyProviderSettingsEmailVerificationSettings;
 
 	@FindBy(xpath = "//label[contains(text(),'Api Url')]//following::input[1]")
@@ -311,6 +313,35 @@ public class Settings {
 		}
 	}
 
+	
+	public void verify_SuccessMessage_ESP(String inputSuccessMessage) throws Exception {
+		try {
+			Thread.sleep(3000);
+			if (successfullMessage.isDisplayed()) {
+				String successMessage = successfullMessage.getText();
+				System.out.println("Message is " + successMessage);
+				test.log(Status.INFO, "Message is " + successMessage);
+				Log.info("Message is " + successMessage);
+				Screenshots.takeScreenshot(driver, inputSuccessMessage + " is verified");
+				System.out.println(inputSuccessMessage + " is verified");
+				test.log(Status.INFO, inputSuccessMessage + " is verified");
+				Log.info(inputSuccessMessage + " is verified");
+			} else if (errorMessage.isDisplayed()) {
+				String error_Message = errorMessage.getText();
+				Screenshots.takeScreenshot(driver, error_Message + " is displayed");
+				System.out.println(error_Message + " is displayed");
+				test.log(Status.INFO, error_Message + "  is displayed");
+				Log.info(error_Message + "  is displayed");
+				applyWait.waitForElementToBeClickable(cancelButton, DefineConstants.explicitWait_30).click();
+         		Screenshots.takeScreenshot(driver, "User clicked cancel button on Mail Settings");
+		        test.log(Status.INFO, "User clicked cancel button on Mail Settings");
+		        Log.info("User clicked cancel button on Mail Settings");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
 	public void verify_SuccessMessage(String inputSuccessMessage) throws Exception {
 		try {
 			Thread.sleep(3000);
@@ -457,6 +488,7 @@ public class Settings {
 
 	public void click_Delete_PopUp_EmailServiceProvider() {
 		try {
+			Thread.sleep(3000L);
 			applyWait.waitForElementToBeClickable(emailServiceProvider_Delete_ButtonPopUp,
 					DefineConstants.explicitWait_30);
 			javascriptClick.click(emailServiceProvider_Delete_ButtonPopUp);
@@ -680,7 +712,7 @@ public class Settings {
 		try {
 			applyWait.waitForElementToBeClickable(configurationURL, DefineConstants.explicitWait_30).clear();
 			configurationURL.sendKeys(input_ConfigurationUrl);
-			Screenshots.takeScreenshot(driver, "User entered Configuration Url name as " + input_ConfigurationUrl);
+			Screenshots.takeScreenshot(driver, "User entered Configuration Url name");
 			test.log(Status.INFO, "User entered Configuration Url name as " + input_ConfigurationUrl);
 			Log.info("User entered Configuration Url name as " + input_ConfigurationUrl);
 		} catch (Exception e) {
@@ -732,8 +764,7 @@ public class Settings {
 			applyWait.waitForElementToBeClickable(configurationURLTransactional, DefineConstants.explicitWait_30)
 					.clear();
 			configurationURLTransactional.sendKeys(input_ConfigurationUrl);
-			Screenshots.takeScreenshot(driver,
-					"User entered transactional Configuration Url name as " + input_ConfigurationUrl);
+			Screenshots.takeScreenshot(driver, "User entered Transactional Configuration Url");
 			test.log(Status.INFO, "User entered transactional Configuration Url name as " + input_ConfigurationUrl);
 			Log.info("User entered transactional Configuration Url name as " + input_ConfigurationUrl);
 		} catch (Exception e) {

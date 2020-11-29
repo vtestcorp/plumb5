@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite 1">
+	<listeners>
+		<listener class-name="listeners.AnnotationTransformer" />
+	</listeners>
+	<test name="Web Module">
+		<parameter name="browserType" value="chrome" />
+		<classes>
+			<class name="com.plumb5.web.testcases.TC_01_Web_ManageCampaigns_CreateDraftCampaign"/> 		
+			<class name="com.plumb5.web.testcases.TC_02_Web_ManageCampaigns_EditDraftCampaign"/>
+			<class name="com.plumb5.web.testcases.TC_03_Web_ManageCampaigns_DuplicateDraftCampaign"/>
+			<class name="com.plumb5.web.testcases.TC_04_Web_ManageCampaigns_DeleteDraftCampaign"/>
+			<class name="com.plumb5.web.testcases.TC_05_Web_BrowserNotifications_CreateTemplate"/>			
+			<class name="com.plumb5.web.testcases.TC_06_Web_BrowserNotifications_Create_Edit_Template"/>
+			<class name="com.plumb5.web.testcases.TC_07_Web_BrowserNotifications_Delete_Template"/>
+			<class name="com.plumb5.web.testcases.TC_08_Web_BrowserNotifications_Duplicate_Template"/>
+			<class name="com.plumb5.web.testcases.TC_09_Web_ManageNotifications_CreateScheduledCampaigns"/>
+		    <class name="com.plumb5.web.testcases.TC_10_Web_ManageNotifications_CreateRSSNotifications"/>
+			<class name="com.plumb5.web.testcases.TC_11_Web_FormsBanners_CreateForm"/> 
+			<class name="com.plumb5.web.testcases.TC_12_Web_FormsBanners_EditForm"/> 
+			<class name="com.plumb5.web.testcases.TC_13_Web_FormsBanners_FormSettings"/>
+			<class name="com.plumb5.web.testcases.TC_14_Web_FormsBanners_FormPreview"/>
+			<class name="com.plumb5.web.testcases.TC_15_Web_FormsBanners_ChangeFormStatus"/>
+			<class name="com.plumb5.web.testcases.TC_16_Web_FormsBanners_AddResources"/>
+			<class name="com.plumb5.web.testcases.TC_17_Web_FormsBanners_EditResources"/>
+			<class name="com.plumb5.web.testcases.TC_18_Web_FormsBanners_ResourcesChangeStatus"/>
+			<class name="com.plumb5.web.testcases.TC_19_Web_FormsBanners_DeleteResources"/> 
+			<class name="com.plumb5.web.testcases.TC_20_Web_FormsBanners_SetRules"/>
+			<class name="com.plumb5.web.testcases.TC_21_Web_FormsBanners_ChangeFormPriority"/>
+		</classes>
+	</test>
+</suite>

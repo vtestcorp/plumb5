@@ -1,0 +1,20 @@
+{
+	"First Name": "Amit",
+	"Last Name":"Mishra",
+	"Email Id":"amit@gmail.com",
+	"Mobile Number":"9235525423",
+	"Report To":"NewUI",
+	"Role":"FullControl",
+	"Account":"Plumb5V6",
+	"Group":"Admin",
+	"Success Message":"Saved successfully",
+	
+	"Update First Name": "Raj",
+	"Update Last Name":"Mishra",
+	"Update Mobile Number":"9235525423",
+	"Update Report To":"NewUI",
+	"Update Role":"FullControl",
+	"Update Account":"Plumb5V6",
+	"Update Success Message":"Saved successfully",
+	"Delete Success Message":"Deleted successfully"
+}

@@ -1,0 +1,15 @@
+{
+	"Resources Source": "URL",
+	"Upload Sources File": "Files To Upload\\UploadSourceFIle.docx",
+	"Resource Url": "www.resourceurl.com",
+	"Resources Description": "resource description asdfsada",
+	"Resources Type": "Css Link",
+	"Success Message": "Added successfully",
+	
+	"Update Resources Source": "URL",
+	"Update Upload Sources File": "Files To Upload\\UploadSourceFIle.docx",
+	"Update Resource Url": "www.updateresourceurl.com",
+	"Update Resources Description": "update resource description asdfsada",
+	"Update Resources Type": "Css Link",
+	"Update Success Message": "Updated successfully"
+}

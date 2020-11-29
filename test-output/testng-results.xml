@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite 1" duration-ms="19499" started-at="2020-10-08T07:58:44Z" finished-at="2020-10-08T07:59:04Z">
+  <suite name="Suite 1" duration-ms="22308" started-at="2020-11-24T14:19:12Z" finished-at="2020-11-24T14:19:34Z">
     <groups>
     </groups>
-    <test name="Mail Module" duration-ms="19499" started-at="2020-10-08T07:58:44Z" finished-at="2020-10-08T07:59:04Z">
-      <class name="com.plumb5.mail.testcases.TC_39_Dashboard_Home">
-        <test-method status="PASS" signature="classInstitiate()[pri:0, instance:com.plumb5.mail.testcases.TC_39_Dashboard_Home@7f560810]" name="classInstitiate" is-config="true" duration-ms="11" started-at="2020-10-08T13:28:44Z" finished-at="2020-10-08T13:28:44Z">
+    <test name="Profile Module" duration-ms="22308" started-at="2020-11-24T14:19:12Z" finished-at="2020-11-24T14:19:34Z">
+      <class name="com.plumb5.myprofile.testcases.TC_16_Profile_Channel_Credits">
+        <test-method status="PASS" signature="classInstitiate()[pri:0, instance:com.plumb5.myprofile.testcases.TC_16_Profile_Channel_Credits@7f560810]" name="classInstitiate" is-config="true" duration-ms="23" started-at="2020-11-24T19:49:12Z" finished-at="2020-11-24T19:49:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classInstitiate -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.plumb5.mail.testcases.TC_39_Dashboard_Home@7f560810]" name="setUp" is-config="true" duration-ms="8640" started-at="2020-10-08T13:28:44Z" finished-at="2020-10-08T13:28:53Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.plumb5.myprofile.testcases.TC_16_Profile_Channel_Credits@7f560810]" name="setUp" is-config="true" duration-ms="9618" started-at="2020-11-24T19:49:12Z" finished-at="2020-11-24T19:49:21Z">
           <params>
             <param index="0">
               <value>
@@ -22,26 +22,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="Create_Group()[pri:0, instance:com.plumb5.mail.testcases.TC_39_Dashboard_Home@7f560810]" name="Create_Group" duration-ms="10112" started-at="2020-10-08T13:28:53Z" finished-at="2020-10-08T13:29:03Z">
+        <test-method status="PASS" signature="Create_Group()[pri:0, instance:com.plumb5.myprofile.testcases.TC_16_Profile_Channel_Credits@7f560810]" name="Create_Group" duration-ms="12254" started-at="2020-11-24T19:49:21Z" finished-at="2020-11-24T19:49:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Create_Group -->
-        <test-method status="PASS" signature="checkResult(org.testng.ITestResult)[pri:0, instance:com.plumb5.mail.testcases.TC_39_Dashboard_Home@7f560810]" name="checkResult" is-config="true" duration-ms="8" started-at="2020-10-08T13:29:03Z" finished-at="2020-10-08T13:29:03Z">
+        <test-method status="PASS" signature="checkResult(org.testng.ITestResult)[pri:0, instance:com.plumb5.myprofile.testcases.TC_16_Profile_Channel_Credits@7f560810]" name="checkResult" is-config="true" duration-ms="5" started-at="2020-11-24T19:49:33Z" finished-at="2020-11-24T19:49:33Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Create_Group status=SUCCESS method=TC_39_Dashboard_Home.Create_Group()[pri:0, instance:com.plumb5.mail.testcases.TC_39_Dashboard_Home@7f560810] output={null}]]]>
+                <![CDATA[[TestResult name=Create_Group status=SUCCESS method=TC_16_Profile_Channel_Credits.Create_Group()[pri:0, instance:com.plumb5.myprofile.testcases.TC_16_Profile_Channel_Credits@7f560810] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkResult -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.plumb5.mail.testcases.TC_39_Dashboard_Home@7f560810]" name="tearDown" is-config="true" duration-ms="717" started-at="2020-10-08T13:29:03Z" finished-at="2020-10-08T13:29:04Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.plumb5.myprofile.testcases.TC_16_Profile_Channel_Credits@7f560810]" name="tearDown" is-config="true" duration-ms="407" started-at="2020-11-24T19:49:33Z" finished-at="2020-11-24T19:49:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.plumb5.mail.testcases.TC_39_Dashboard_Home -->
-    </test> <!-- Mail Module -->
+      </class> <!-- com.plumb5.myprofile.testcases.TC_16_Profile_Channel_Credits -->
+    </test> <!-- Profile Module -->
   </suite> <!-- Suite 1 -->
 </testng-results>

@@ -14,12 +14,10 @@ import org.testng.Assert;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import com.google.gson.JsonArray;
 
 import config.DefineConstants;
 import helperMethods.DropDown;
 import helperMethods.JavascriptClick;
-import helperMethods.JsonUtils;
 import helperMethods.Log;
 import helperMethods.Screenshots;
 import helperMethods.WaitTypes;
@@ -69,10 +67,10 @@ public class Scheduled_Campaigns {
 
 	@FindBy(xpath = "//label[contains(text(),'Subject Line')]//following::input[1]")
 	private WebElement subjectLine;
-	
+
 	@FindBy(xpath = "//label[contains(text(),'Subject Line')]//following::select[2]")
 	private WebElement variation_A_50;
-	
+
 	@FindBy(xpath = "//label[contains(text(),'Subject Line')]//following::select[3]")
 	private WebElement variation_B_50;
 
@@ -145,17 +143,21 @@ public class Scheduled_Campaigns {
 
 	@FindBy(xpath = "//label[contains(text(),'Description')]//following::textarea[1]")
 	private WebElement mergedGroupDescription;
-	
+
 	@FindBy(xpath = "//label[@class='frmlbltxt mb-0']//following::div[1]")
 	private WebElement A_BTesting;
-	
+
+	@FindBy(xpath = "//input[@id='txt_SearchBy']")
+	private WebElement search_ScheduledCampaign;
+
 	public void enter_CampaignIdentifier(String input_CampaignIdentifier) {
-		applyWait.waitForElementToBeClickable(campaignIdentifier, DefineConstants.explicitWait_30).clear();
-		campaignIdentifier.sendKeys(input_CampaignIdentifier);
 		try {
-			Screenshots.takeScreenshot(driver, "User entered campaign identifier");
-			test.log(Status.INFO, "User entered campaign identifier");
-			Log.info("User entered campaign identifier");
+			applyWait.waitForElementToBeClickable(campaignIdentifier, DefineConstants.explicitWait_30).click();
+			campaignIdentifier.clear();
+			campaignIdentifier.sendKeys(input_CampaignIdentifier);
+			Screenshots.takeScreenshot(driver, "User entered campaign identifier as" + input_CampaignIdentifier);
+			test.log(Status.INFO, "User entered campaign identifier as" + input_CampaignIdentifier);
+			Log.info("User entered campaign identifier as" + input_CampaignIdentifier);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -321,7 +323,7 @@ public class Scheduled_Campaigns {
 		test.log(Status.INFO, inputVariation_A_50 + " is selected for Variation A 50");
 		Log.info(inputVariation_A_50 + " is selected for Variation A 50");
 	}
-	
+
 	public void select_Variation_B_50(String inputVariation_B_50) {
 		try {
 			applyWait.waitForElementToBeClickable(variation_B_50, DefineConstants.explicitWait_30);
@@ -334,7 +336,7 @@ public class Scheduled_Campaigns {
 		test.log(Status.INFO, inputVariation_B_50 + " is selected for Variation B 50");
 		Log.info(inputVariation_B_50 + " is selected for Variation B 50");
 	}
-	
+
 	public void clear_SubjectLine() {
 		try {
 			applyWait.waitForElementToBeClickable(subjectLine, DefineConstants.explicitWait_30).clear();
@@ -360,7 +362,6 @@ public class Scheduled_Campaigns {
 		Log.info(input_SubjectLine + " is entered for subject line");
 	}
 
-	
 	public void enable_A_BTesting() {
 		try {
 			applyWait.waitForElementToBeClickable(A_BTesting, DefineConstants.explicitWait_30).click();
@@ -373,8 +374,6 @@ public class Scheduled_Campaigns {
 		Log.info("User enable A/B Testing");
 	}
 
-	
-	
 	public void select_SelectTemplate(String input_SelectTemplate) {
 		try {
 			applyWait.waitForElementToBeClickable(selectTemplate, DefineConstants.explicitWait_30);
@@ -393,13 +392,13 @@ public class Scheduled_Campaigns {
 			applyWait.waitForElementToBeClickable(scheduleDate, DefineConstants.explicitWait_30).click();
 			date = driver.findElement(By.linkText(input_ScheduledDate));
 			date.click();
-			Screenshots.takeScreenshot(driver, "User selected schedule date");
-
+			Screenshots.takeScreenshot(driver, "User selected schedule date as " + input_ScheduledDate);
+			test.log(Status.INFO, "User selected schedule date as " + input_ScheduledDate);
+			Log.info("User selected schedule date as " + input_ScheduledDate);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		test.log(Status.INFO, "User selected schedule date");
-		Log.info("User selected schedule date");
+
 	}
 
 	public void select_ScheduledTime(String input_ScheduledTime) {
@@ -413,14 +412,12 @@ public class Scheduled_Campaigns {
 			dropDown.selectByVisibleText(scheduleTimeMinutes, values[1]);
 			applyWait.waitForElementToBeClickable(AM_PM, DefineConstants.explicitWait_30);
 			dropDown.selectByVisibleText(AM_PM, values[2]);
-
 			Screenshots.takeScreenshot(driver, "User selected schedule time");
-
+			test.log(Status.INFO, "User selected schedule time as " + input_ScheduledTime);
+			Log.info("User selected schedule time as " + input_ScheduledTime);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		test.log(Status.INFO, "User selected schedule time");
-		Log.info("User selected schedule time");
 	}
 
 	public void select_TestCampaign(String input_TestCampaign, String value) {
@@ -431,19 +428,16 @@ public class Scheduled_Campaigns {
 				applyWait.waitForElementToBeClickable(emailAddress, DefineConstants.explicitWait_30).sendKeys(value);
 			} else if (input_TestCampaign.equals("Group")) {
 				testCampaign.click();
-				applyWait.waitForElementToBeClickable(testCampaignGroupDropdown, DefineConstants.explicitWait_30)
-						.click();
-				applyWait.waitForElementToBeClickable(testCampaignGroupDropdownSearchBar,
-						DefineConstants.explicitWait_30).sendKeys(value);
-				testCampaignGroupDropdownSearchBar.sendKeys(Keys.ENTER);
+				applyWait.waitForElementToBeClickable(testCampaignGroupDropdown, DefineConstants.explicitWait_30).click();
+//				applyWait.waitForElementToBeClickable(testCampaignGroupDropdownSearchBar,DefineConstants.explicitWait_30).sendKeys(value);
+//				testCampaignGroupDropdownSearchBar.sendKeys(Keys.ENTER);
 			}
 			Screenshots.takeScreenshot(driver, "User selected test campaign as " + input_TestCampaign);
-
+			test.log(Status.INFO, "User selected schedule date");
+			Log.info("User selected schedule date");
 		} catch (Exception e) {
 			e.printStackTrace();
-		}
-		test.log(Status.INFO, "User selected schedule date");
-		Log.info("User selected schedule date");
+		}		
 	}
 
 	public void click_SaveButton() {
@@ -477,6 +471,20 @@ public class Scheduled_Campaigns {
 				test.log(Status.INFO, errorMessage.getText() + "  is displayed");
 				Log.info(errorMessage.getText() + "  is displayed");
 			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void search_ScheduledCampaign(String input_search_ScheduledCampaign) {
+		try {
+			applyWait.waitForElementToBeClickable(search_ScheduledCampaign, DefineConstants.explicitWait_30)
+					.sendKeys(input_search_ScheduledCampaign);
+			search_ScheduledCampaign.sendKeys(Keys.ENTER);
+			test.log(Status.INFO, "User searched " + input_search_ScheduledCampaign + " in Scheduled Campaign");
+			Log.info("User searched " + input_search_ScheduledCampaign + " in Scheduled Campaign");
+			Screenshots.takeScreenshot(driver,
+					"User searched " + input_search_ScheduledCampaign + " in Scheduled Campaign");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -606,32 +614,35 @@ public class Scheduled_Campaigns {
 	}
 
 	public void clickDeletePopUp() {
-
-		applyWait.waitForElementToBeClickable(deleteButtonPopUp, DefineConstants.explicitWait_30).click();
 		try {
+			applyWait.waitForElementToBeClickable(deleteButtonPopUp, DefineConstants.explicitWait_30).click();
 			Screenshots.takeScreenshot(driver, "User clicked delete button on delete this group pop up");
+			test.log(Status.INFO, "User clicked delete button on delete this group pop up");
+			Log.info("User clicked delete button on delete this group pop up");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		test.log(Status.INFO, "User clicked delete button on delete this group pop up");
-		Log.info("User clicked delete button on delete this group pop up");
 	}
 
-	public void verifyDeletedSuccessfully(String inputmessage) throws IOException {
-		if (addedSuccessfullyMessage.isDisplayed()) {
-			String groupCreatedMessage = addedSuccessfullyMessage.getText();
-			Screenshots.takeScreenshot(driver, groupCreatedMessage + " message is verified");
-			System.out.println(groupCreatedMessage + " message is verified");
-			test.log(Status.INFO, groupCreatedMessage + " message is verified");
-			Log.info(groupCreatedMessage + " message is verified");
-			Assert.assertTrue(true);
-		} else if (errorMessage.isDisplayed()) {
-			String groupNotCreatedMessage = errorMessage.getText();
-			Screenshots.takeScreenshot(driver, groupNotCreatedMessage + " message is verified");
-			System.out.println(groupNotCreatedMessage + " message is verified");
-			test.log(Status.INFO, groupNotCreatedMessage + " message is verified");
-			Log.info(groupNotCreatedMessage + " message is verified");
-			Assert.assertTrue(false);
+	public void verifyDeletedSuccessfully(String inputmessage) {
+		try {
+			if (addedSuccessfullyMessage.isDisplayed()) {
+				String groupCreatedMessage = addedSuccessfullyMessage.getText();
+				Screenshots.takeScreenshot(driver, groupCreatedMessage + " message is verified");
+				System.out.println(groupCreatedMessage + " message is verified");
+				test.log(Status.INFO, groupCreatedMessage + " message is verified");
+				Log.info(groupCreatedMessage + " message is verified");
+				Assert.assertTrue(true);
+			} else if (errorMessage.isDisplayed()) {
+				String groupNotCreatedMessage = errorMessage.getText();
+				Screenshots.takeScreenshot(driver, groupNotCreatedMessage + " message is verified");
+				System.out.println(groupNotCreatedMessage + " message is verified");
+				test.log(Status.INFO, groupNotCreatedMessage + " message is verified");
+				Log.info(groupNotCreatedMessage + " message is verified");
+				Assert.assertTrue(false);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 	}
 }

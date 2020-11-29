@@ -1,0 +1,17 @@
+{
+	"Provider Name": "everlytic mail",
+	"Promotional Account Name": "account test",
+	"Promotional API Key": "api test",
+	"Promotional Configuration Url": "www.promotional.com",
+	"Transactional Account Name": "Transactional Account Name Transactional test",
+	"Transactional API Key": "Transactional API Key Transactional test",
+	"Transactional Configuration Url": "www.configuration.com",
+	"Service Provider Success Message": "Service Provider Added Successfully",
+	"Update Promotional Account Name": "account test updated",
+	"Update Promotional API Key": "api test updated",
+	"Update Promotional Configuration Url": "www.promotionalupdated.com",
+	"Update Transactional Account Name": "Transactional Account Name Transactional test updated",
+	"Update Transactional API Key": "Transactional API Key Transactional test updated",
+	"Update Transactional Configuration Url": "www.configurationupdated.com",
+	"Update Service Provider Success Message": "Service Provider Updated Successfully"
+}

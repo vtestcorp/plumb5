@@ -1,0 +1,19 @@
+{
+	"Campaign Name": "campaign 1",
+	"Template Name": "Create Scheduled Template 1",
+	"Template Description": "Create Scheduled Template 1 description",
+	"Template Message":"Create Scheduled Template 1 message",
+	"Page Url":"www.Scheduledtemplate1.com",
+	
+	"Campaign Identier":"Scheduled Campaign 4",
+	"Campaign Type":"Promotional(Explicit)",
+	"Send To":[
+		"My Group"
+	],
+	"Batch Type":"Single",
+	"Scheduled Date": "31",
+	"Scheduled Time": "12:30:PM",
+	"Test Campaign Radio Button": "Group",
+	"Test Campaign Value":"ShiftGroup",
+	"Time Period":"Next Month"
+}

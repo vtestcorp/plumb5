@@ -8,7 +8,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.server.handler.SendKeys;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
@@ -89,7 +88,7 @@ public class Triggers {
 
 	@FindBy(xpath = "//span[@id='ui_span_MasterSuccess_Message']")
 	private WebElement addedSuccessfullyMessage;
-	
+
 	@FindBy(id = "ui_div_MasterSuccess")
 	private WebElement deleteSuccessfully;
 
@@ -116,13 +115,13 @@ public class Triggers {
 
 	@FindBy(linkText = "Change Status")
 	private WebElement changeStatus;
-	
+
 	@FindBy(linkText = "Delete")
 	private WebElement delete;
 
 	@FindBy(xpath = "//button[@id='deleteRowConfirm']")
 	private WebElement deleteButtonPopUp;
-	
+
 	public void click_CreateTriggers() {
 		try {
 			applyWait.waitForElementToBeClickable(createTriggers, DefineConstants.explicitWait_30).click();
@@ -186,8 +185,9 @@ public class Triggers {
 
 	public void enter_TriggerIdentifier(String input_TriggerIdentifier) {
 		try {
+			Thread.sleep(5000L);
 			applyWait.waitForElementToBeClickable(triggerIdentifier, DefineConstants.explicitWait_30);
-			Thread.sleep(3000l);
+			Thread.sleep(3000L);
 			triggerIdentifier.clear();
 			triggerIdentifier.sendKeys(input_TriggerIdentifier);
 			Screenshots.takeScreenshot(driver, input_TriggerIdentifier + " is entered as input_TriggerIdentifier");
@@ -199,8 +199,9 @@ public class Triggers {
 	}
 
 	public void edit_TriggerIdentifier(String input_TriggerIdentifier) {
-		try {
 
+		try {
+			Thread.sleep(5000L);
 			if (!input_TriggerIdentifier.equals(null)) {
 				applyWait.waitForElementToBeClickable(triggerIdentifier, DefineConstants.explicitWait_30);
 				Thread.sleep(3000l);
@@ -368,7 +369,6 @@ public class Triggers {
 		}
 	}
 
-	
 	public void verify_DeleteSuccessfullyMessage(String inputSuccessMessage) {
 		System.out.println("started");
 		try {
@@ -396,14 +396,6 @@ public class Triggers {
 		}
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
 	public void search_Draft(String draftName) {
 		applyWait.waitForElementToBeClickable(search_Triggers, DefineConstants.explicitWait_10).sendKeys(draftName);
 		search_Triggers.sendKeys(Keys.ENTER);
@@ -570,7 +562,7 @@ public class Triggers {
 		test.log(Status.INFO, "User clicked delete button");
 		Log.info("User clicked delete button");
 	}
-	
+
 	public void clickDeletePopUp() {
 
 		applyWait.waitForElementToBeClickable(deleteButtonPopUp, DefineConstants.explicitWait_30).click();

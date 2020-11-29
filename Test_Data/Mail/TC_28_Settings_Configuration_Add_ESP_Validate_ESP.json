@@ -1,0 +1,11 @@
+{
+	"Provider Name": "elastic mail",
+	"Promotional Account Name": "account test",
+	"Promotional API Key": "api test",
+	"Promotional Configuration Url": "www.promotional.com",
+	"Transactional Account Name": "Transactional Account Name Transactional test",
+	"Transactional API Key": "Transactional API Key Transactional test",
+	"Transactional Configuration Url": "www.configuration.com",
+	"Service Provider Success Message": "Service Provider Added Successfully",
+	"Email Service Provider Validate Success Message":"Promotional and Transactional both are successfully validate"
+}

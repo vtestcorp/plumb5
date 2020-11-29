@@ -1,0 +1,15 @@
+{
+	"Provider Name": "everlytic mail",
+	"Promotional Account Name": "account test",
+	"Promotional API Key": "api test",
+	"Promotional Configuration Url": "www.promotional.com",
+	"Transactional Account Name": "Transactional Account Name Transactional test",
+	"Transactional API Key": "Transactional API Key Transactional test",
+	"Transactional Configuration Url": "www.configuration.com",
+	"Service Provider Success Message": "Service Provider Added Successfully",
+	"Email Address": "xyz@plumb5.com",	
+	"Success Message":"Added successfully! Activation mail has been sent",
+	"Unsubscribe Url": "www.unsubscribe.com",
+	"Success Message Custom Unsubscribe":"Saved successfully",
+	"Email Service Provider Delete Success Message":"Email Service Provider Deleted Successfully"
+}

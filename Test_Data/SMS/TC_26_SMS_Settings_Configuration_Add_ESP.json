@@ -1,0 +1,15 @@
+{
+	"Promotional Provider Name": "Dove Soft",
+	"Promotional Configuration":"http://103.233.79.246/mobicomm/REST/sendsms/",
+	"Promotional Sender Name":"NTFSMS",
+	"Promotional User Name":"PLUMBFIVE",
+	"Promotional Password":"01cc37d3d2XX",
+	
+	"Transactional Provider Name": "Dove Soft",
+	"Transactional Configuration":"http://103.233.79.246/mobicomm/REST/sendsms/",
+	"Transactional Sender Name":"NTFSMS",
+	"Transactional User Name":"PLUMBFIVE",
+	"Transactional Password":"01cc37d3d2XX",
+	
+	"Success Message":"The settings has been saved successfully"
+}

@@ -1,0 +1,13 @@
+{
+	"Trigger Identifier": "Trigger 18",
+	"Campaign Name": "campaign 1",
+	"Content Type": "Promotional(Explicit)",
+	"Delivery Time": "Daily",
+	"Select Template":"Template one",
+	"Select Rule":"Visitor's Type",
+	"Test Campaign Value 1": "Individual",
+	"Test Campaign Value 2": "Transactional",
+	"Phone Number":"7653454335",
+	"Success Message":"The trigger has been saved successfully",
+	"Status Success Message":"Status updated sucessfully"
+}

@@ -1,0 +1,12 @@
+{
+	"Campaign Name": "campaign 1",
+	"Template Name": "Template 41 Edit",
+	"Template Description": "Template 41 Edit description",
+	"Notification Type":"Text with Banner",
+	"Template Title":"Template title",
+	"Template Message":"Template 41 Edit message",
+	"Page Url":"http://www.abc.com",
+	"User Attribute":"Name",
+	"File Path":"Files To Upload\\Template Image.png",
+	"Banner Path":"Files To Upload\\Banner Image.jpg"
+}
