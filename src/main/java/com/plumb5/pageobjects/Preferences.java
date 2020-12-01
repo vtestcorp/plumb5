@@ -26,7 +26,8 @@ public class Preferences {
 	private ExtentTest test;
 	private JavascriptClick javascriptClick;
 	private DropDown dropdown;
-
+	String values[];
+	
 	public Preferences(WebDriver driver, ExtentTest test) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -83,7 +84,7 @@ public class Preferences {
 
 	@FindBy(xpath = "//div[contains(text(),'Channel Credits')]")
 	private WebElement channelCredits;
-	
+
 	@FindBy(xpath = "//a[contains(text(),'Create Campaign Identifier')]")
 	private WebElement createCampaignIdentifier;
 	
@@ -102,6 +103,44 @@ public class Preferences {
 	private List<WebElement> tableRows;
 
 	private List<WebElement> tableColums;
+
+	@FindBy(xpath = "//div[contains(text(),'Time Zone')]")
+	private WebElement TimeZone;
+	
+	@FindBy(xpath = "//div[contains(text(),'DND Hours')]")
+	private WebElement DNDHours;
+	
+	@FindBy(xpath = "//select[@id='ui_selectDndHours']")
+	private WebElement DNDHours_Dropdown;
+		
+	@FindBy(xpath = "//select[@id='ui_timezoneoffset']")
+	private WebElement TimeZone_Dropdown;
+	
+	@FindBy(xpath = "//button[@id='ui_Savetimezone']")
+	private WebElement saveButton_TimeZone;
+	
+	// Between
+	@FindBy(xpath = "//select[@id='ui_selectStartHour']")
+	private WebElement between_TimeHours;
+	
+	@FindBy(xpath = "//select[@id='ui_selectStartminute']")
+	private WebElement between_TimeMinutes;
+	
+	@FindBy(xpath = "//select[@id='ui_selectStartPMAM']")
+	private WebElement between_AM_PM;
+	
+	// And	
+	@FindBy(xpath = "//select[@id='ui_selectEndHour']")
+	private WebElement and_TimeHours;
+	
+	@FindBy(xpath = "//select[@id='ui_selectEndminute']")
+	private WebElement and_TimeMinutes;
+	
+	@FindBy(xpath = "//select[@id='ui_selectEndAMPM']")
+	private WebElement and_AM_PM;
+	
+	@FindBy(xpath = "//button[contains(text(),'Add New DND Time Slot')]")
+	private WebElement AddNewDNDTimeSlot_Button;
 	
 	public void select_Account(String input_Account) {
 		try {
@@ -116,7 +155,40 @@ public class Preferences {
 		}
 	}
 	
+	public void select_TimeZone(String input_TimeZone) {
+		try {
+			applyWait.waitForElementToBeClickable(TimeZone_Dropdown, DefineConstants.explicitWait_30);
+			dropdown.selectByVisibleText(TimeZone_Dropdown, input_TimeZone);
+			Screenshots.takeScreenshot(driver, "User selected "+input_TimeZone+ " as Time Zone");
+			test.log(Status.INFO, "User selected "+input_TimeZone+ " as Time Zone");
+			Log.info("User selected "+input_TimeZone+ " as Time Zone");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 	
+	public void select_DND_HOURS(String input_DND_HOURS) {
+		try {
+			applyWait.waitForElementToBeClickable(DNDHours_Dropdown, DefineConstants.explicitWait_30);
+			dropdown.selectByVisibleText(DNDHours_Dropdown, input_DND_HOURS);
+			Screenshots.takeScreenshot(driver, "User selected "+input_DND_HOURS+ " as DND HOURS");
+			test.log(Status.INFO, "User selected "+input_DND_HOURS+ " as DND HOURS");
+			Log.info("User selected "+input_DND_HOURS+ " as DND HOURS");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void click_SaveButtonTimeZone() {
+		try {
+			applyWait.waitForElementToBeClickable(saveButton_TimeZone, DefineConstants.explicitWait_30).click();
+			Screenshots.takeScreenshot(driver, "User clicked save button");
+			test.log(Status.INFO, "User clicked save button");
+			Log.info("User clicked save button");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 	
 	public void enter_IP_ExcludeTrafficFrom(String input_IP_ExcludeTrafficFrom) {
 		try {
@@ -292,6 +364,28 @@ public class Preferences {
 		}
 	}
 	
+	public void click_TimeZone() {
+		try {
+			applyWait.waitForElementToBeClickable(TimeZone, DefineConstants.explicitWait_30).click();						
+			Screenshots.takeScreenshot(driver, "User clicked Time Zone");
+			test.log(Status.INFO, "User clicked Time Zone");
+			Log.info("User clicked Time Zone");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void click_DNDHours() {
+		try {
+			applyWait.waitForElementToBeClickable(DNDHours, DefineConstants.explicitWait_30).click();						
+			Screenshots.takeScreenshot(driver, "User clicked DND Hours");
+			test.log(Status.INFO, "User clicked DND Hours");
+			Log.info("User clicked DND Hours");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
 	public void click_CreateCampaignIdentifier() {
 		try {
 			applyWait.waitForElementToBeClickable(createCampaignIdentifier, DefineConstants.explicitWait_30).click();						
@@ -378,4 +472,52 @@ public class Preferences {
 		}
 	}
 
+	public void select_BetweenTime(String input_BetweenTime) {
+		try {
+
+			values = input_BetweenTime.split(":");
+
+			applyWait.waitForElementToBeClickable(between_TimeHours, DefineConstants.explicitWait_30);
+			dropdown.selectByVisibleText(between_TimeHours, values[0]);
+			applyWait.waitForElementToBeClickable(between_TimeMinutes, DefineConstants.explicitWait_30);
+			dropdown.selectByVisibleText(between_TimeMinutes, values[1]);
+			applyWait.waitForElementToBeClickable(between_AM_PM, DefineConstants.explicitWait_30);
+			dropdown.selectByVisibleText(between_AM_PM, values[2]);
+			Screenshots.takeScreenshot(driver, "User selected Start time");
+			test.log(Status.INFO, "User selected Start time as " + input_BetweenTime);
+			Log.info("User selected Start time as " + input_BetweenTime);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void select_AndTime(String input_EndTime) {
+		try {
+
+			values = input_EndTime.split(":");
+
+			applyWait.waitForElementToBeClickable(and_TimeHours, DefineConstants.explicitWait_30);
+			dropdown.selectByVisibleText(and_TimeHours, values[0]);
+			applyWait.waitForElementToBeClickable(and_TimeMinutes, DefineConstants.explicitWait_30);
+			dropdown.selectByVisibleText(and_TimeMinutes, values[1]);
+			applyWait.waitForElementToBeClickable(and_AM_PM, DefineConstants.explicitWait_30);
+			dropdown.selectByVisibleText(and_AM_PM, values[2]);
+			Screenshots.takeScreenshot(driver, "User selected END time");
+			test.log(Status.INFO, "User selected End time as " + input_EndTime);
+			Log.info("User selected End time as " + input_EndTime);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void click_AddNewDNDTimeSlotButton() {
+		try {
+			applyWait.waitForElementToBeClickable(AddNewDNDTimeSlot_Button, DefineConstants.explicitWait_30).click();
+			Screenshots.takeScreenshot(driver, "User clicked Add New DND Time Slot Button");
+			test.log(Status.INFO, "User clicked Add New DND Time Slot Button");
+			Log.info("User clicked Add New DND Time Slot Button");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 }

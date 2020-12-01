@@ -8,7 +8,21 @@
   <test name="Profile Module">
     <parameter name="browserType" value="chrome"/>
     <classes>
-      <class name="com.plumb5.myprofile.testcases.TC_16_Profile_Channel_Credits"/>
+      <class name="com.plumb5.myprofile.testcases.TC_18_Profile_DND_Hours"/>
     </classes>
   </test> <!-- Profile Module -->
+  <test name="Profile Module(failed)">
+    <parameter name="browserType" value="chrome"/>
+    <classes>
+      <class name="com.plumb5.myprofile.testcases.TC_18_Profile_DND_Hours">
+        <methods>
+          <include name="classInstitiate"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="checkResult"/>
+          <include name="Create_Group"/>
+        </methods>
+      </class> <!-- com.plumb5.myprofile.testcases.TC_18_Profile_DND_Hours -->
+    </classes>
+  </test> <!-- Profile Module(failed) -->
 </suite> <!-- Failed suite [Suite 1] -->

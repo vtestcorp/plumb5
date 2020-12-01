@@ -187,4 +187,6 @@ public class DefineConstants {
 	public static final String TC_14_Profile_CreateCampaignIdentifier = TestData_Folder + "//" + Profile_TestData_Folder + "//" + "TC_14_Profile_CreateCampaignIdentifier.json";
 	public static final String TC_15_Profile_Integration_Status = TestData_Folder + "//" + Profile_TestData_Folder + "//" + "TC_15_Profile_Integration_Status.json";	
 	public static final String TC_16_Profile_Channel_Credits = TestData_Folder + "//" + Profile_TestData_Folder + "//" + "TC_16_Profile_Channel_Credits.json";
+	public static final String TC_17_Profile_Time_Zone = TestData_Folder + "//" + Profile_TestData_Folder + "//" + "TC_17_Profile_Time_Zone.json";
+	public static final String TC_18_Profile_DND_Hours = TestData_Folder + "//" + Profile_TestData_Folder + "//" + "TC_18_Profile_DND_Hours.json";
 }
