@@ -8,16 +8,16 @@
 	<test name="Mail Module">
 		<parameter name="browserType" value="chrome" />
 		<classes>
-			     <!-- <class name="com.plumb5.mail.testcases.TC_01_Create_Draft_Campaign" /> 
-			      <class name="com.plumb5.mail.testcases.TC_02_Search_Draft_Campaign" /> 
+			     <class name="com.plumb5.mail.testcases.TC_01_Create_Draft_Campaign" /> 
+			     <class name="com.plumb5.mail.testcases.TC_02_Search_Draft_Campaign" /> 
 				 <class name="com.plumb5.mail.testcases.TC_03_Edit_Draft_Campaign" />  
 				 <class name="com.plumb5.mail.testcases.TC_04_Duplicate_Draft_Campaign" /> 
 				 <class name="com.plumb5.mail.testcases.TC_05_Delete_Draft_Campaign" />
 			     <class name="com.plumb5.mail.testcases.TC_06_Create_Scheduled_Campaign" />
 			     <class name="com.plumb5.mail.testcases.TC_07_Search_Scheduled_Campaign" />
-			     <class name="com.plumb5.mail.testcases.TC_08_Delete_Scheduled_Campaign" /> -->
+			     <class name="com.plumb5.mail.testcases.TC_08_Delete_Scheduled_Campaign" />
 			     <class name="com.plumb5.mail.testcases.TC_09_Edit_Scheduled_Campaign" />
-			     <!-- <class name="com.plumb5.mail.testcases.TC_10_Duplicate_Scheduled_Campaign" />
+			     <class name="com.plumb5.mail.testcases.TC_10_Duplicate_Scheduled_Campaign" />
 			     <class name="com.plumb5.mail.testcases.TC_11_Create_Triggers_Campaign" />
 			     <class name="com.plumb5.mail.testcases.TC_12_Search_Triggers_Campaign" />
 			     <class name="com.plumb5.mail.testcases.TC_13_Edit_Triggers_Campaign" />
@@ -47,7 +47,7 @@
 			     <class name="com.plumb5.mail.testcases.TC_37_Reports_Soft_Bounced_FilterByReason_Download"/>
 			     <class name="com.plumb5.mail.testcases.TC_38_Reports_Alerts_Notifications"/>			     
 			     <class name="com.plumb5.mail.testcases.TC_39_Dashboard_Home"/>			     		      			     			     	     			     						     			     			         	     			     		     	
-				 <class name="com.plumb5.mail.testcases.TC_40_Create_Templates_UploadTemplate"/>  -->	
+				 <class name="com.plumb5.mail.testcases.TC_40_Create_Templates_UploadTemplate"/>	
 		</classes>
 	</test>
 </suite>

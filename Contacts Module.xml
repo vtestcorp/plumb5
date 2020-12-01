@@ -8,7 +8,7 @@
 	<test name="Mail Module">
 		<parameter name="browserType" value="chrome" />
 		<classes>
-		    <!-- <class name="com.plumb5.contacts.testcases.TC_01_Create_Contact" /> 
+		    <class name="com.plumb5.contacts.testcases.TC_01_Create_Contact" /> 
 			<class name="com.plumb5.contacts.testcases.TC_02_Add_Remove_Group" />
 			<class name="com.plumb5.contacts.testcases.TC_03_Invalidate_Contact" />
 			<class name="com.plumb5.contacts.testcases.TC_04_Unsubscribe_Contact" />
@@ -26,7 +26,7 @@
 			<class name="com.plumb5.contacts.testcases.TC_16_Exclusive_Contact_List" />
 			<class name="com.plumb5.contacts.testcases.TC_17_Groups_Export" />
 			<class name="com.plumb5.contacts.testcases.TC_18_Validate_Group" />
-			<class name="com.plumb5.contacts.testcases.TC_19_Contact_Settings" />-->	
+			<class name="com.plumb5.contacts.testcases.TC_19_Contact_Settings" />	
 			<class name="com.plumb5.contacts.testcases.TC_20_Contact_Import" />									
 		</classes>
 	</test>

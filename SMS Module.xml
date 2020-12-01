@@ -8,7 +8,41 @@
 	<test name="SMS Module">
 		<parameter name="browserType" value="chrome" />
 		<classes>
-			<class name="com.plumb5.sms.testcases.TC_12_SMS_ManageCampaigns_CreateTemplate"/>		 																																														    		      			     			     	     			     						     			     			         	     			     		     
+			<class name="com.plumb5.sms.testcases.TC_01_SMS_Dashboard_ShowingDataFor"/>  
+			<class name="com.plumb5.sms.testcases.TC_02_SMS_Dashboard_WebAnalytics"/>
+			<class name="com.plumb5.sms.testcases.TC_03_SMS_Dashboard_WebEngagement"/>  		 
+			<class name="com.plumb5.sms.testcases.TC_04_SMS_Dashboard_Mail"/>		
+			<class name="com.plumb5.sms.testcases.TC_05_SMS_Dashboard_Sms"/>
+			<class name="com.plumb5.sms.testcases.TC_06_SMS_Dashboard_MobileAnalytics"/>	
+			<class name="com.plumb5.sms.testcases.TC_07_SMS_ManageCampaigns_CreateDraft"/>
+			<class name="com.plumb5.sms.testcases.TC_08_SMS_ManageCampaigns_EditDraft"/>
+			<class name="com.plumb5.sms.testcases.TC_09_SMS_ManageCampaigns_DuplicateDraft"/>	
+			<class name="com.plumb5.sms.testcases.TC_10_SMS_ManageCampaigns_DeleteDraft"/>	
+			<class name="com.plumb5.sms.testcases.TC_11_SMS_ManageCampaigns_Draft_ExportReport"/>
+			<class name="com.plumb5.sms.testcases.TC_12_SMS_ManageCampaigns_CreateTemplate"/>
+			<class name="com.plumb5.sms.testcases.TC_13_SMS_ManageCampaigns_SearchTemplate"/>
+			<class name="com.plumb5.sms.testcases.TC_14_SMS_ManageCampaigns_EditTemplate"/>
+			<class name="com.plumb5.sms.testcases.TC_15_SMS_ManageCampaigns_DuplicateTemplate"/>
+			<class name="com.plumb5.sms.testcases.TC_16_SMS_ManageCampaigns_DeleteTemplate"/> 	
+			<class name="com.plumb5.sms.testcases.TC_17_SMS_ManageCampaigns_CreateScheduledCampaigns"/>
+			<class name="com.plumb5.sms.testcases.TC_18_SMS_ManageCampaigns_Create_Edit_ScheduledCampaigns"/>
+			<class name="com.plumb5.sms.testcases.TC_19_SMS_ManageCampaigns_Create_Duplicate_ScheduledCampaigns"/>
+			<class name="com.plumb5.sms.testcases.TC_20_SMS_ManageCampaigns_Delete_ScheduledCampaigns"/>
+			<class name="com.plumb5.sms.testcases.TC_21_SMS_Reports_Filter_By_Campaigns"/>
+			<class name="com.plumb5.sms.testcases.TC_22_SMS_Reports_TriggerCampaigns_FilterByCampaigns"/>
+			<class name="com.plumb5.sms.testcases.TC_23_SMS_Reports_Alerts_Notifications"/>	
+			<class name="com.plumb5.sms.testcases.TC_24_SMS_Reports_Alerts_Notifications_Download"/>	
+			<class name="com.plumb5.sms.testcases.TC_25_SMS_ManageCampaigns_CreateScheduledCampaigns"/>
+			<class name="com.plumb5.sms.testcases.TC_26_SMS_Settings_Configuration_Add_ESP"/>
+			<class name="com.plumb5.sms.testcases.TC_27_SMS_Settings_Configuration_AddESP_EditESP"/>	
+			<class name="com.plumb5.sms.testcases.TC_28_SMS_Settings_Configuration_Add_ESP_Validate_ESP"/>
+			<class name="com.plumb5.sms.testcases.TC_29_SMS_Settings_Configuration_AddESP_DeleteESP"/>
+			<class name="com.plumb5.sms.testcases.TC_30_Create_Triggers_Campaigns"/>
+			<class name="com.plumb5.sms.testcases.TC_31_Create_Edit_Triggers_Campaigns"/>
+			<class name="com.plumb5.sms.testcases.TC_32_Create_Duplicate_Triggers_Campaigns"/>
+			<class name="com.plumb5.sms.testcases.TC_33_Change_Status_Triggers_Campaigns"/>
+			<class name="com.plumb5.sms.testcases.TC_34_Delete_Triggers_Campaigns"/>
+			<class name="com.plumb5.sms.testcases.TC_35_Create_Test_Triggers_Campaigns"/>																																											    		      			     			     	     			     						     			     			         	     			     		     
 		</classes>
 	</test>
 </suite>
