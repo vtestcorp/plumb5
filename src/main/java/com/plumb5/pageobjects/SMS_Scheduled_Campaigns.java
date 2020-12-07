@@ -42,7 +42,6 @@ public class SMS_Scheduled_Campaigns {
 	@FindBy(xpath = "//label[contains(text(),'Campaign Identifier')]//following::input[1]")
 	private WebElement campaignIdentifier;
 
-	
 	@FindBy(xpath = "//span[@id='select2-ui_ddlCampaign-container']")
 	private WebElement campaignName;
 
@@ -661,12 +660,12 @@ public class SMS_Scheduled_Campaigns {
 				testCampaignGroupDropdownSearchBar.sendKeys(Keys.ENTER);
 			}
 			Screenshots.takeScreenshot(driver, "User selected test campaign as " + input_TestCampaign);
-
+			test.log(Status.INFO, "User selected test campaign as " + input_TestCampaign);
+			Log.info("User selected test campaign as " + input_TestCampaign);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		test.log(Status.INFO, "User selected schedule date");
-		Log.info("User selected schedule date");
+		
 	}
 
 	public void click_SaveButton() {

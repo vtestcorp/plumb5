@@ -1,0 +1,20 @@
+{
+    "Campaign Identier":"Campaign Identier One",
+	"Campaign Name": "campaign 1",
+	"Template Name": "temp one",
+	"Send To":[
+		"Test"
+	],
+	"Template Message":"Create Scheduled Template 1 message",
+	"Page Url":"www.Scheduledtemplate1.com",
+	
+	
+	"Campaign Type":"Promotional(Explicit)",
+	
+	"Batch Type":"Single",
+	"Scheduled Date": "31",
+	"Scheduled Time": "12:30:PM",
+	"Test Campaign Radio Button": "Group",
+	"Test Campaign Value":"ShiftGroup",
+	"Time Period":"Next Month"
+}

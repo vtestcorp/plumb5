@@ -8,7 +8,7 @@
 	<test name="Profile Module">
 		<parameter name="browserType" value="chrome" />
 		<classes>
-			<class name="com.plumb5.myprofile.testcases.TC_01_Profile_UpdateProfile"/> 
+			<!-- <class name="com.plumb5.myprofile.testcases.TC_01_Profile_UpdateProfile"/> 
 			<class name="com.plumb5.myprofile.testcases.TC_02_Profile_UpdatePassword"/>
 			<class name="com.plumb5.myprofile.testcases.TC_03_Profile_Update_APIKey"/>
 			<class name="com.plumb5.myprofile.testcases.TC_04_Profile_CreateUsersVerification"/>
@@ -24,7 +24,7 @@
 			<class name="com.plumb5.myprofile.testcases.TC_14_Profile_CreateCampaignIdentifier"/>
 			<class name="com.plumb5.myprofile.testcases.TC_15_Profile_Integration_Status"/>
 			<class name="com.plumb5.myprofile.testcases.TC_16_Profile_Channel_Credits"/> 
-			<class name="com.plumb5.myprofile.testcases.TC_17_Profile_Time_Zone"/>
+			<class name="com.plumb5.myprofile.testcases.TC_17_Profile_Time_Zone"/> -->
 			<class name="com.plumb5.myprofile.testcases.TC_18_Profile_DND_Hours"/> 			 					
 		</classes>
 	</test>

@@ -7,6 +7,8 @@ public class DefineConstants {
 	// Application URL
 	public static final String URL = "http://p5app.p5email.com/";
 
+//	 http://p5beta.plumb5.com/p5-newdesign/manage-campaigns.html
+	
 	// Explicit Wait Time
 	public static final int explicitWait_10 = 10;
 	
@@ -25,6 +27,8 @@ public class DefineConstants {
 	public static final String Mail_TestData_Folder = "Mail";
 
 	public static final String SMS_TestData_Folder = "SMS";
+	
+	public static final String Mobile_TestData_Folder = "Mobile";
 	
 	public static final String Web_TestData_Folder = "Web";
 	
@@ -189,4 +193,6 @@ public class DefineConstants {
 	public static final String TC_16_Profile_Channel_Credits = TestData_Folder + "//" + Profile_TestData_Folder + "//" + "TC_16_Profile_Channel_Credits.json";
 	public static final String TC_17_Profile_Time_Zone = TestData_Folder + "//" + Profile_TestData_Folder + "//" + "TC_17_Profile_Time_Zone.json";
 	public static final String TC_18_Profile_DND_Hours = TestData_Folder + "//" + Profile_TestData_Folder + "//" + "TC_18_Profile_DND_Hours.json";
+	// Mobile Module	
+	public static final String TC_01_Mobile_PushNotification_ManageCampaigns_CreateScheduledCampaigns = TestData_Folder + "//" + Mobile_TestData_Folder + "//" + "TC_01_Mobile_PushNotification_ManageCampaigns_CreateScheduledCampaigns.json";
 }

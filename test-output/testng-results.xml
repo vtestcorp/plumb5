@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite 1" duration-ms="54126" started-at="2020-12-01T05:58:59Z" finished-at="2020-12-01T05:59:54Z">
+  <suite name="Suite 1" duration-ms="200620" started-at="2020-12-04T06:07:01Z" finished-at="2020-12-04T06:10:22Z">
     <groups>
     </groups>
-    <test name="Profile Module" duration-ms="54126" started-at="2020-12-01T05:58:59Z" finished-at="2020-12-01T05:59:54Z">
-      <class name="com.plumb5.myprofile.testcases.TC_18_Profile_DND_Hours">
-        <test-method status="PASS" signature="classInstitiate()[pri:0, instance:com.plumb5.myprofile.testcases.TC_18_Profile_DND_Hours@7f560810]" name="classInstitiate" is-config="true" duration-ms="33" started-at="2020-12-01T11:28:59Z" finished-at="2020-12-01T11:28:59Z">
+    <test name="Profile Module" duration-ms="200620" started-at="2020-12-04T06:07:01Z" finished-at="2020-12-04T06:10:22Z">
+      <class name="com.plumb5.mobile.testcases.TC_01_Mobile_PushNotification_ManageCampaigns_CreateScheduledCampaigns">
+        <test-method status="PASS" signature="classInstitiate()[pri:0, instance:com.plumb5.mobile.testcases.TC_01_Mobile_PushNotification_ManageCampaigns_CreateScheduledCampaigns@7f560810]" name="classInstitiate" is-config="true" duration-ms="8" started-at="2020-12-04T11:37:01Z" finished-at="2020-12-04T11:37:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classInstitiate -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.plumb5.myprofile.testcases.TC_18_Profile_DND_Hours@7f560810]" name="setUp" is-config="true" duration-ms="9634" started-at="2020-12-01T11:28:59Z" finished-at="2020-12-01T11:29:09Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.plumb5.mobile.testcases.TC_01_Mobile_PushNotification_ManageCampaigns_CreateScheduledCampaigns@7f560810]" name="setUp" is-config="true" duration-ms="7778" started-at="2020-12-04T11:37:01Z" finished-at="2020-12-04T11:37:09Z">
           <params>
             <param index="0">
               <value>
@@ -22,83 +22,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="Create_Group()[pri:0, instance:com.plumb5.myprofile.testcases.TC_18_Profile_DND_Hours@7f560810]" name="Create_Group" duration-ms="43633" started-at="2020-12-01T11:29:09Z" finished-at="2020-12-01T11:29:53Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: net::ERR_CONNECTION_TIMED_OUT
-  (Session info: chrome=86.0.4240.198)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-165ABPJ', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51761}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: ea5d59ee74ec07d70a29c94dea45d0de]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
-  (Session info: chrome=86.0.4240.198)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-165ABPJ', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51761}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: ea5d59ee74ec07d70a29c94dea45d0de
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at com.plumb5.myprofile.testcases.TC_18_Profile_DND_Hours.Create_Group(TC_18_Profile_DND_Hours.java:34)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method status="PASS" signature="Create_Group()[pri:0, instance:com.plumb5.mobile.testcases.TC_01_Mobile_PushNotification_ManageCampaigns_CreateScheduledCampaigns@7f560810]" name="Create_Group" duration-ms="192478" started-at="2020-12-04T11:37:09Z" finished-at="2020-12-04T11:40:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Create_Group -->
-        <test-method status="PASS" signature="checkResult(org.testng.ITestResult)[pri:0, instance:com.plumb5.myprofile.testcases.TC_18_Profile_DND_Hours@7f560810]" name="checkResult" is-config="true" duration-ms="331" started-at="2020-12-01T11:29:53Z" finished-at="2020-12-01T11:29:53Z">
+        <test-method status="PASS" signature="checkResult(org.testng.ITestResult)[pri:0, instance:com.plumb5.mobile.testcases.TC_01_Mobile_PushNotification_ManageCampaigns_CreateScheduledCampaigns@7f560810]" name="checkResult" is-config="true" duration-ms="19" started-at="2020-12-04T11:40:22Z" finished-at="2020-12-04T11:40:22Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Create_Group status=FAILURE method=TC_18_Profile_DND_Hours.Create_Group()[pri:0, instance:com.plumb5.myprofile.testcases.TC_18_Profile_DND_Hours@7f560810] output={null}]]]>
+                <![CDATA[[TestResult name=Create_Group status=SUCCESS method=TC_01_Mobile_PushNotification_ManageCampaigns_CreateScheduledCampaigns.Create_Group()[pri:0, instance:com.plumb5.mobile.testcases.TC_01_Mobile_PushNotification_ManageCampaigns_CreateScheduledCampaigns@7f560810] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkResult -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.plumb5.myprofile.testcases.TC_18_Profile_DND_Hours@7f560810]" name="tearDown" is-config="true" duration-ms="467" started-at="2020-12-01T11:29:53Z" finished-at="2020-12-01T11:29:54Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.plumb5.mobile.testcases.TC_01_Mobile_PushNotification_ManageCampaigns_CreateScheduledCampaigns@7f560810]" name="tearDown" is-config="true" duration-ms="321" started-at="2020-12-04T11:40:22Z" finished-at="2020-12-04T11:40:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.plumb5.myprofile.testcases.TC_18_Profile_DND_Hours -->
+      </class> <!-- com.plumb5.mobile.testcases.TC_01_Mobile_PushNotification_ManageCampaigns_CreateScheduledCampaigns -->
     </test> <!-- Profile Module -->
   </suite> <!-- Suite 1 -->
 </testng-results>

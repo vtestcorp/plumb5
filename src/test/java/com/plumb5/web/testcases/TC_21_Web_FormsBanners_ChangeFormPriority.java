@@ -5,10 +5,8 @@ import org.testng.annotations.Test;
 import com.plumb5.pageobjects.Dashboard;
 import com.plumb5.pageobjects.LoginPage;
 import com.plumb5.pageobjects.ManagePopUpForms;
-import com.plumb5.pageobjects.SMS;
 import com.plumb5.pageobjects.SetRules;
 import com.plumb5.pageobjects.Web;
-import com.plumb5.pageobjects.Web_Template;
 
 import base.BaseClass;
 import config.DefineConstants;
@@ -17,10 +15,8 @@ import helperMethods.JsonUtils;
 public class TC_21_Web_FormsBanners_ChangeFormPriority extends BaseClass {
 
 	Dashboard dashboard;
-	LoginPage loginPage;
-	SMS sms;
-	Web web;
-	Web_Template webTemplate;
+	LoginPage loginPage;	
+	Web web;	
 	ManagePopUpForms managePopUpForms;
 	SetRules setRules;
 
@@ -30,10 +26,8 @@ public class TC_21_Web_FormsBanners_ChangeFormPriority extends BaseClass {
 		test = extent.createTest("TC_21_Web_FormsBanners_ChangeFormPriority", "Web_FormsBanners_ChangeFormPriority");
 
 		dashboard = new Dashboard(driver, test);
-		loginPage = new LoginPage(driver, test);
-		sms = new SMS(driver, test);
-		web = new Web(driver, test);
-		webTemplate = new Web_Template(driver, test);
+		loginPage = new LoginPage(driver, test);		
+		web = new Web(driver, test);		
 		managePopUpForms = new ManagePopUpForms(driver, test);
 		setRules = new SetRules(driver, test);
 

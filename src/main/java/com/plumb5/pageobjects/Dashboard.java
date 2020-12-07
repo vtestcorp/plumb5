@@ -44,6 +44,9 @@ public class Dashboard {
 	@FindBy(linkText = "SMS")
 	private WebElement sms;
 	
+	@FindBy(linkText = "Mobile")
+	private WebElement mobile;
+	
 	@FindBy(linkText = "Web")
 	private WebElement web;
 	
@@ -141,6 +144,18 @@ public class Dashboard {
 			Screenshots.takeScreenshot(driver, "User clicked SMS");
 			test.log(Status.INFO, "User clicked SMS");
 			Log.info("User clicked SMS");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public void click_Mobile() {
+		try {
+			applyWait.waitForElementToBeClickable(mobile, DefineConstants.explicitWait_30);
+			javascriptClick.click(mobile);
+			Screenshots.takeScreenshot(driver, "User clicked Mobile Tab");
+			test.log(Status.INFO, "User clicked Mobile Tab");
+			Log.info("User clicked Mobile Tab");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite 1">
+	<listeners>
+		<listener class-name="listeners.AnnotationTransformer" />
+	</listeners>
+	<test name="Profile Module">
+		<parameter name="browserType" value="chrome" />
+		<classes>
+			<class name="com.plumb5.mobile.testcases.TC_01_Mobile_PushNotification_ManageCampaigns_CreateScheduledCampaigns"/>	 					
+		</classes>
+	</test>
+</suite>
