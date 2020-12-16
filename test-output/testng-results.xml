@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite 1" duration-ms="200620" started-at="2020-12-04T06:07:01Z" finished-at="2020-12-04T06:10:22Z">
+  <suite name="Suite 1" duration-ms="30419" started-at="2020-12-16T05:46:32Z" finished-at="2020-12-16T05:47:03Z">
     <groups>
     </groups>
-    <test name="Profile Module" duration-ms="200620" started-at="2020-12-04T06:07:01Z" finished-at="2020-12-04T06:10:22Z">
-      <class name="com.plumb5.mobile.testcases.TC_01_Mobile_PushNotification_ManageCampaigns_CreateScheduledCampaigns">
-        <test-method status="PASS" signature="classInstitiate()[pri:0, instance:com.plumb5.mobile.testcases.TC_01_Mobile_PushNotification_ManageCampaigns_CreateScheduledCampaigns@7f560810]" name="classInstitiate" is-config="true" duration-ms="8" started-at="2020-12-04T11:37:01Z" finished-at="2020-12-04T11:37:01Z">
+    <test name="Profile Module" duration-ms="30419" started-at="2020-12-16T05:46:32Z" finished-at="2020-12-16T05:47:03Z">
+      <class name="com.plumb5.mobile.testcases.TC_06_Mobile_Delete_Template">
+        <test-method status="PASS" signature="classInstitiate()[pri:0, instance:com.plumb5.mobile.testcases.TC_06_Mobile_Delete_Template@7f560810]" name="classInstitiate" is-config="true" duration-ms="9" started-at="2020-12-16T11:16:32Z" finished-at="2020-12-16T11:16:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classInstitiate -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.plumb5.mobile.testcases.TC_01_Mobile_PushNotification_ManageCampaigns_CreateScheduledCampaigns@7f560810]" name="setUp" is-config="true" duration-ms="7778" started-at="2020-12-04T11:37:01Z" finished-at="2020-12-04T11:37:09Z">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.plumb5.mobile.testcases.TC_06_Mobile_Delete_Template@7f560810]" name="setUp" is-config="true" duration-ms="8102" started-at="2020-12-16T11:16:32Z" finished-at="2020-12-16T11:16:40Z">
           <params>
             <param index="0">
               <value>
@@ -22,26 +22,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="Create_Group()[pri:0, instance:com.plumb5.mobile.testcases.TC_01_Mobile_PushNotification_ManageCampaigns_CreateScheduledCampaigns@7f560810]" name="Create_Group" duration-ms="192478" started-at="2020-12-04T11:37:09Z" finished-at="2020-12-04T11:40:22Z">
+        <test-method status="PASS" signature="Create_Group()[pri:0, instance:com.plumb5.mobile.testcases.TC_06_Mobile_Delete_Template@7f560810]" name="Create_Group" duration-ms="21897" started-at="2020-12-16T11:16:40Z" finished-at="2020-12-16T11:17:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Create_Group -->
-        <test-method status="PASS" signature="checkResult(org.testng.ITestResult)[pri:0, instance:com.plumb5.mobile.testcases.TC_01_Mobile_PushNotification_ManageCampaigns_CreateScheduledCampaigns@7f560810]" name="checkResult" is-config="true" duration-ms="19" started-at="2020-12-04T11:40:22Z" finished-at="2020-12-04T11:40:22Z">
+        <test-method status="PASS" signature="checkResult(org.testng.ITestResult)[pri:0, instance:com.plumb5.mobile.testcases.TC_06_Mobile_Delete_Template@7f560810]" name="checkResult" is-config="true" duration-ms="7" started-at="2020-12-16T11:17:02Z" finished-at="2020-12-16T11:17:02Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Create_Group status=SUCCESS method=TC_01_Mobile_PushNotification_ManageCampaigns_CreateScheduledCampaigns.Create_Group()[pri:0, instance:com.plumb5.mobile.testcases.TC_01_Mobile_PushNotification_ManageCampaigns_CreateScheduledCampaigns@7f560810] output={null}]]]>
+                <![CDATA[[TestResult name=Create_Group status=SUCCESS method=TC_06_Mobile_Delete_Template.Create_Group()[pri:0, instance:com.plumb5.mobile.testcases.TC_06_Mobile_Delete_Template@7f560810] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkResult -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.plumb5.mobile.testcases.TC_01_Mobile_PushNotification_ManageCampaigns_CreateScheduledCampaigns@7f560810]" name="tearDown" is-config="true" duration-ms="321" started-at="2020-12-04T11:40:22Z" finished-at="2020-12-04T11:40:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.plumb5.mobile.testcases.TC_06_Mobile_Delete_Template@7f560810]" name="tearDown" is-config="true" duration-ms="388" started-at="2020-12-16T11:17:02Z" finished-at="2020-12-16T11:17:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.plumb5.mobile.testcases.TC_01_Mobile_PushNotification_ManageCampaigns_CreateScheduledCampaigns -->
+      </class> <!-- com.plumb5.mobile.testcases.TC_06_Mobile_Delete_Template -->
     </test> <!-- Profile Module -->
   </suite> <!-- Suite 1 -->
 </testng-results>

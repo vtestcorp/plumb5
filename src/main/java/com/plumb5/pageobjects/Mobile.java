@@ -82,13 +82,13 @@ public class Mobile {
 
 	private List<WebElement> tableColums;
 
-	@FindBy(xpath = "//a[contains(text(),'Push')]")
+	@FindBy(xpath = "//a[normalize-space() = 'Push Notifications']")
 	private WebElement PushNotifications;
 
 	@FindBy(linkText = "Manage Campaigns")
 	private WebElement manageCampaigns;
 
-	@FindBy(partialLinkText = "Create")
+	@FindBy(partialLinkText = "Create Schedul")
 	private WebElement createScheduledCampaign;
 
 	@FindBy(xpath = "//label[contains(text(),'Campaign Identifier')]//following::input[1]")
@@ -134,6 +134,9 @@ public class Mobile {
 
 	@FindBy(xpath = "//a[contains(text(),'Save')]")
 	private WebElement saveButton;
+	
+	@FindBy(linkText = "Templates")
+	private WebElement templates;
 	
 	public void click_PushNotifications() {
 		try {
@@ -459,5 +462,20 @@ public class Mobile {
 			e.printStackTrace();
 		}
 	
+	}
+	
+	public void click_Templates() {
+		try {
+			applyWait.waitForElementToBeClickable(templates, DefineConstants.explicitWait_30);
+			javascriptClick.click(templates);
+			Screenshots.takeScreenshot(driver, "User clicked templates");
+			test.log(Status.INFO, "User clicked templates");
+			Log.info("User clicked templates");
+			Thread.sleep(3000L);
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 }

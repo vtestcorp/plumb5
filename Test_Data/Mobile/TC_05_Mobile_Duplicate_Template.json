@@ -1,0 +1,16 @@
+{
+	"Select Name": "Promo Template",
+	"Campaign Name":"campaign 1",
+	"Template Name":"Template 14",
+	"Edit Template Name":"Template 14 Duplicated",
+	"Template Description":"Template 12 description Duplicated",
+	"Title":"Template title Duplicated",
+	"Message":"Template message Duplicated",
+	"SubText":"Template subtext Duplicated",
+	"Default Action":"Deeplinking",
+	"Deep Url":"www.deepurlDuplicated.com",
+	"Button Name":"Button one Duplicated",
+	"Button Default Action":"Deeplinking",
+	"Button Deep Url":"www.buttoneonedeepurlDuplicated.com",
+	"Success Message": "Updated Successfully"
+}

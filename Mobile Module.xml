@@ -8,7 +8,12 @@
 	<test name="Profile Module">
 		<parameter name="browserType" value="chrome" />
 		<classes>
-			<class name="com.plumb5.mobile.testcases.TC_01_Mobile_PushNotification_ManageCampaigns_CreateScheduledCampaigns"/>	 					
+	   <!-- <class name="com.plumb5.mobile.testcases.TC_01_Mobile_PushNotification_ManageCampaigns_CreateScheduledCampaigns"/> 
+			<class name="com.plumb5.mobile.testcases.TC_02_Mobile_Create_Template"/>
+		 	<class name="com.plumb5.mobile.testcases.TC_03_Mobile_Search_Template"/> 
+		 	<class name="com.plumb5.mobile.testcases.TC_04_Mobile_Edit_Template"/>
+		 	<class name="com.plumb5.mobile.testcases.TC_05_Mobile_Duplicate_Template"/>-->
+		 	<class name="com.plumb5.mobile.testcases.TC_06_Mobile_Delete_Template"/>	 					
 		</classes>
 	</test>
 </suite>

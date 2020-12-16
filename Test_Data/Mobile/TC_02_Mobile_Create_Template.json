@@ -1,0 +1,15 @@
+{
+	"Select Name": "Promo Template",
+	"Campaign Name":"campaign 1",
+	"Template Name":"Template 13",
+	"Template Description":"Template 13 description",
+	"Title":"Template title",
+	"Message":"Template message",
+	"SubText":"Template subtext",
+	"Default Action":"Deeplinking",
+	"Deep Url":"www.deepurl.com",
+	"Button Name":"Button one",
+	"Button Default Action":"Deeplinking",
+	"Button Deep Url":"www.buttoneonedeepurl.com",
+	"Success Message":""
+}

@@ -8,7 +8,7 @@
   <test name="Profile Module">
     <parameter name="browserType" value="chrome"/>
     <classes>
-      <class name="com.plumb5.mobile.testcases.TC_01_Mobile_PushNotification_ManageCampaigns_CreateScheduledCampaigns"/>
+      <class name="com.plumb5.mobile.testcases.TC_06_Mobile_Delete_Template"/>
     </classes>
   </test> <!-- Profile Module -->
 </suite> <!-- Failed suite [Suite 1] -->

@@ -195,4 +195,9 @@ public class DefineConstants {
 	public static final String TC_18_Profile_DND_Hours = TestData_Folder + "//" + Profile_TestData_Folder + "//" + "TC_18_Profile_DND_Hours.json";
 	// Mobile Module	
 	public static final String TC_01_Mobile_PushNotification_ManageCampaigns_CreateScheduledCampaigns = TestData_Folder + "//" + Mobile_TestData_Folder + "//" + "TC_01_Mobile_PushNotification_ManageCampaigns_CreateScheduledCampaigns.json";
+	public static final String TC_02_Mobile_Create_Template = TestData_Folder + "//" + Mobile_TestData_Folder + "//" + "TC_02_Mobile_Create_Template.json";
+	public static final String TC_03_Mobile_Search_Template = TestData_Folder + "//" + Mobile_TestData_Folder + "//" + "TC_03_Mobile_Search_Template.json";
+	public static final String TC_04_Mobile_Edit_Template = TestData_Folder + "//" + Mobile_TestData_Folder + "//" + "TC_04_Mobile_Edit_Template.json";
+	public static final String TC_05_Mobile_Duplicate_Template = TestData_Folder + "//" + Mobile_TestData_Folder + "//" + "TC_05_Mobile_Duplicate_Template.json";
+	public static final String TC_06_Mobile_Delete_Template = TestData_Folder + "//" + Mobile_TestData_Folder + "//" + "TC_06_Mobile_Delete_Template.json";
 }
