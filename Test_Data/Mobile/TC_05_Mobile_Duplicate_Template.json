@@ -1,16 +1,34 @@
 {
+
 	"Select Name": "Promo Template",
 	"Campaign Name":"campaign 1",
-	"Template Name":"Template 14",
-	"Edit Template Name":"Template 14 Duplicated",
-	"Template Description":"Template 12 description Duplicated",
-	"Title":"Template title Duplicated",
-	"Message":"Template message Duplicated",
-	"SubText":"Template subtext Duplicated",
+	"Template Description":"Template Description",
+	"Title":"Template title",
+	"Message":"Template message",
+	"SubText":"Template subtext",
 	"Default Action":"Deeplinking",
-	"Deep Url":"www.deepurlDuplicated.com",
-	"Button Name":"Button one Duplicated",
+	"Deep Url":"www.deepurl.com",
+	"Button Name":"Button one",
+	"Button Name 2":"Button Two",
 	"Button Default Action":"Deeplinking",
-	"Button Deep Url":"www.buttoneonedeepurlDuplicated.com",
-	"Success Message": "Updated Successfully"
+	"Button Default Action 2":"Dismiss",
+	"Button Deep Url":"www.buttoneonedeepurl.com",
+	"Success Message":""
+
+
+
+	"Select Name": "Promo Template",
+	"Campaign Name":"campaign 1",
+	"Template Name":"Template 95",
+	"Edit Template Name":"Template 95 Duplicated",
+	"Template Description Duplicated":"Template 95 description Duplicated",
+	"Title Duplicated":"Template title Duplicated",
+	"Message Duplicated":"Template message Duplicated",
+	"SubText Duplicated":"Template subtext Duplicated",
+	"Default Action Duplicated":"Deeplinking",
+	"Deep Url Duplicated":"www.deepurlDuplicated.com",
+	"Button Name Duplicated":"Button one Duplicated",
+	"Button Default Action Duplicated":"Deeplinking",
+	"Button Deep Url Duplicated":"www.buttoneonedeepurlDuplicated.com",
+	"Success Message Duplicated": "Updated Successfully"
 }

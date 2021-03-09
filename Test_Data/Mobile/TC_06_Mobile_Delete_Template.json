@@ -1,5 +1,19 @@
 {
+
+	"Select Name": "Promo Template",
+	"Campaign Name":"campaign 1",
+	"Template Description":"Template Description",
+	"Title":"Template title",
+	"Message":"Template message",
+	"SubText":"Template subtext",
+	"Default Action":"Deeplinking",
+	"Deep Url":"www.deepurl.com",
+	"Button Name":"Button one",
+	"Button Name 2":"Button Two",
+	"Button Default Action":"Deeplinking",
+	"Button Default Action 2":"Dismiss",
+	"Button Deep Url":"www.buttoneonedeepurl.com",
+	"Success Message":""
 	
-	"Template Name":"jkhgfrdfgrd",
-	"Success Message": "Template deleted sucessfully."
+	"Success Message Delete": "Template deleted sucessfully."
 }
