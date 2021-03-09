@@ -21,6 +21,8 @@ public class DefineConstants {
 	public static final String PROJECT_PATH = System.getProperty("user.dir");
 
 	public static final String PROJECT_OS = System.getProperty("os.name");
+	
+	public static final String browser = "chrome";
 
 	public static final String TestData_Folder = "Test_Data";
 
@@ -45,6 +47,8 @@ public class DefineConstants {
 	public static final String jdbcUrl="jdbc:sqlserver://13.229.13.199:1433;databaseName=db_newui";
 	public static final String db_UserName="gbadmin";
 	public static final String db_Password="admin@2010";
+	
+	public static final String LeadManagement_TestData_Folder = "LeadManagement";
 	
 	
 	// Contacts Module Json file
@@ -194,10 +198,51 @@ public class DefineConstants {
 	public static final String TC_17_Profile_Time_Zone = TestData_Folder + "//" + Profile_TestData_Folder + "//" + "TC_17_Profile_Time_Zone.json";
 	public static final String TC_18_Profile_DND_Hours = TestData_Folder + "//" + Profile_TestData_Folder + "//" + "TC_18_Profile_DND_Hours.json";
 	// Mobile Module	
-	public static final String TC_01_Mobile_PushNotification_ManageCampaigns_CreateScheduledCampaigns = TestData_Folder + "//" + Mobile_TestData_Folder + "//" + "TC_01_Mobile_PushNotification_ManageCampaigns_CreateScheduledCampaigns.json";
-	public static final String TC_02_Mobile_Create_Template = TestData_Folder + "//" + Mobile_TestData_Folder + "//" + "TC_02_Mobile_Create_Template.json";
-	public static final String TC_03_Mobile_Search_Template = TestData_Folder + "//" + Mobile_TestData_Folder + "//" + "TC_03_Mobile_Search_Template.json";
-	public static final String TC_04_Mobile_Edit_Template = TestData_Folder + "//" + Mobile_TestData_Folder + "//" + "TC_04_Mobile_Edit_Template.json";
-	public static final String TC_05_Mobile_Duplicate_Template = TestData_Folder + "//" + Mobile_TestData_Folder + "//" + "TC_05_Mobile_Duplicate_Template.json";
-	public static final String TC_06_Mobile_Delete_Template = TestData_Folder + "//" + Mobile_TestData_Folder + "//" + "TC_06_Mobile_Delete_Template.json";
+	public static final String TC_06_Mobile_PushNotification_ManageCampaigns_CreateScheduledCampaigns = TestData_Folder + "//" + Mobile_TestData_Folder + "//" + "TC_01_Mobile_PushNotification_ManageCampaigns_CreateScheduledCampaigns.json";
+	public static final String TC_07_Mobile_PushNotification_ManageCampaigns_Search_Campaigns = TestData_Folder + "//" + Mobile_TestData_Folder + "//" + "TC_07_Mobile_PushNotification_ManageCampaigns_Search_Campaigns.json";
+	public static final String TC_08_Mobile_PushNotification_ManageCampaigns_EditCampaigns = TestData_Folder + "//" + Mobile_TestData_Folder + "//" + "TC_08_Mobile_PushNotification_ManageCampaigns_Edit_Campaigns.json";
+	public static final String TC_09_Mobile_PushNotification_ManageCampaigns_Duplicate_Scheduled_Campaigns = TestData_Folder + "//" + Mobile_TestData_Folder + "//" + "TC_09_Mobile_PushNotification_ManageCampaigns_Duplicate_Scheduled_Campaigns.json";
+	public static final String TC_01_Mobile_Create_Template = TestData_Folder + "//" + Mobile_TestData_Folder + "//" + "TC_02_Mobile_Create_Template.json";
+	public static final String TC_02_Mobile_Search_Template = TestData_Folder + "//" + Mobile_TestData_Folder + "//" + "TC_03_Mobile_Search_Template.json";
+	public static final String TC_03_Mobile_Edit_Template = TestData_Folder + "//" + Mobile_TestData_Folder + "//" + "TC_04_Mobile_Edit_Template.json";
+	public static final String TC_04_Mobile_Duplicate_Template = TestData_Folder + "//" + Mobile_TestData_Folder + "//" + "TC_05_Mobile_Duplicate_Template.json";
+	public static final String TC_05_Mobile_Delete_Template = TestData_Folder + "//" + Mobile_TestData_Folder + "//" + "TC_06_Mobile_Delete_Template.json";
+
+	//Lead Managements
+	public static final String Create_Lead = TestData_Folder + "//" + LeadManagement_TestData_Folder + "//"+ "TC_01_Create_Lead_Leads.json";
+	public static final String Search_Email_Phone = TestData_Folder + "//" + LeadManagement_TestData_Folder + "//"+ "TC_02_Search_Email_And_Phone_Leads.json";
+	public static final String Edit_Lead = TestData_Folder + "//" + LeadManagement_TestData_Folder + "//"+ "TC_03_Edit_Leads.json";
+	public static final String Delete_Responce = TestData_Folder + "//" + LeadManagement_TestData_Folder + "//"+ "TC_04_Delete_Responce_Message.json";
+	public static final String Add_Follow_Up = TestData_Folder + "//" + LeadManagement_TestData_Folder + "//"+ "TC_05_Add_Follow_Up_Leads.json";
+	public static final String View_Follow_Up = TestData_Folder + "//" + LeadManagement_TestData_Folder + "//"+ "TC_17_View_Follow_Up_Leads.json";
+	public static final String Follow_Up_Complete = TestData_Folder + "//" + LeadManagement_TestData_Folder + "//"+ "TC_18_FollowUp_completed.json";
+	public static final String Add_Notes = TestData_Folder + "//" + LeadManagement_TestData_Folder + "//"+ "TC_06_Add_Notes_Leads.json";
+	public static final String Add_Remove_Group1 = TestData_Folder + "//" + LeadManagement_TestData_Folder + "//"+ "TC_07_Add_Remove_Group_Leads.json";
+	public static final String Send_Email = TestData_Folder + "//" + LeadManagement_TestData_Folder + "//"+ "TC_08_Send_Email_Leads.json";
+	public static final String Send_SMS = TestData_Folder + "//" + LeadManagement_TestData_Folder + "//"+ "TC_09_Send_SMS_Leads.json";
+	public static final String Assign_Lead_Stage_Source = TestData_Folder + "//" + LeadManagement_TestData_Folder + "//"+ "TC_10_Assign_Lead_Stage_Source.json";
+	public static final String Quick_Filter_By = TestData_Folder + "//" + LeadManagement_TestData_Folder + "//"+ "TC_12_Quick_Filter_By_Leads.json";
+	public static final String Order_By = TestData_Folder + "//" + LeadManagement_TestData_Folder + "//"+ "TC_15_Order_By_Leads.json";
+	public static final String Master_Filter = TestData_Folder + "//" + LeadManagement_TestData_Folder + "//"+ "TC_13_Master_Filter_Leads.json";
+	public static final String Change_Stage = TestData_Folder + "//" + LeadManagement_TestData_Folder + "//"+ "TC_16_Change_Stage_Leads.json";
+	public static final String Make_Call = TestData_Folder + "//" + LeadManagement_TestData_Folder + "//"+ "TC_19_Make_Call_Leads.json";
+	public static final String Setting_AddStage = TestData_Folder + "//" + LeadManagement_TestData_Folder + "//"+ "TC_20_Add_Stage_Settings_Configuration.json";
+	public static final String Setting_EditStage = TestData_Folder + "//" + LeadManagement_TestData_Folder + "//"+ "TC_21_Edit_Stage_Setting_Configuration.json";
+	public static final String Setting_DeleteStage = TestData_Folder + "//" + LeadManagement_TestData_Folder + "//"+ "TC_22_Delete_Stage_Setting_Configuration.json";
+	public static final String Setting_In_Activity_Notification = TestData_Folder + "//" + LeadManagement_TestData_Folder + "//"+ "TC_23_In_Active_Notification_Setting_Configuration.json";
+	public static final String Setting_Notification_Rules = TestData_Folder + "//" + LeadManagement_TestData_Folder + "//"+ "TC_24_Add_Rules_Setting_Configuration.json";
+	public static final String Setting_Search_Notification_Rules = TestData_Folder + "//" + LeadManagement_TestData_Folder + "//"+ "TC_25_Search_Rules_Setting_Configuration.json";
+	public static final String Setting_Edit_Notification_Rules = TestData_Folder + "//" + LeadManagement_TestData_Folder + "//"+ "TC_26_Edit_Rules_Setting_Configuration.json";
+	public static final String Setting_Delete_Notification_Rules = TestData_Folder + "//" + LeadManagement_TestData_Folder + "//"+ "TC_27_Delete_Rules_Setting_Configuration.json";
+	public static final String Setting_Call_Setting = TestData_Folder + "//" + LeadManagement_TestData_Folder + "//"+ "TC_28_Call_Settings_Configuration.json";
+	public static final String Setting_Stage_Score = TestData_Folder + "//" + LeadManagement_TestData_Folder + "//"+ "TC_29_Stage_Score_Setting_Configuration.json";
+	
+
 }
+
+
+
+
+
+
+

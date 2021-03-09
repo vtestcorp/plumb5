@@ -1,16 +1,29 @@
 {
 	"Select Name": "Promo Template",
 	"Campaign Name":"campaign 1",
-	"Template Name":"Template 12",
-	"Edit Template Name":"Template 12 Edited",
-	"Template Description":"Template 12 description Edited",
-	"Title":"Template title Edited",
-	"Message":"Template message Edited",
-	"SubText":"Template subtext Edited",
+	"Template Description":"Template Description",
+	"Title":"Template title",
+	"Message":"Template message",
+	"SubText":"Template subtext",
 	"Default Action":"Deeplinking",
-	"Deep Url":"www.deepurlEdited.com",
-	"Button Name":"Button one Edited",
+	"Deep Url":"www.deepurl.com",
+	"Button Name":"Button one",
+	"Button Name 2":"Button Two",
 	"Button Default Action":"Deeplinking",
-	"Button Deep Url":"www.buttoneonedeepurlEdited.com",
-	"Success Message": "Updated Successfully"
+	"Button Default Action 2":"Dismiss",
+	"Button Deep Url":"www.buttoneonedeepurl.com",
+	"Success Message":""
+
+
+	"Edit Template Name":"Template 94 Edited",
+	"Template Description Edited":"Template Edited Description",
+	"Title Edited":"Template title Edited",
+	"Message Edited":"Template message Edited",
+	"SubText Edited":"Template subtext Edited",
+	"Default Action Edited":"Deeplinking",
+	"Deep Url Edited":"www.deepurlEdited.com",
+	"Button Name Edited":"Button one Edited",
+	"Button Default Action Edited":"Deeplinking",
+	"Button Deep Url Edited":"www.buttoneonedeepurlEdited.com",
+	"Success Message Edited": "Updated Successfully"
 }

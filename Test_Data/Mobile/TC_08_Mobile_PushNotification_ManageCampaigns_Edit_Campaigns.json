@@ -1,0 +1,39 @@
+{
+	
+	"Campaign Name": "campaign 1",
+	"Template Name": "Template 19",
+	"Send To":[
+		"Mobile_Push"
+	],
+	"Template Message":"Create Scheduled Template 1 message",
+	"Page Url":"www.Scheduledtemplate1.com",
+	
+	
+	"Campaign Type":"Promotional(Explicit)",
+	
+	"Batch Type":"Single",
+	"Scheduled Date": "28",
+	"Scheduled Time": "23:30:PM",
+	"Test Campaign Radio Button": "Group",
+	"Test Campaign Value":"Mobile_Push",
+	"Time Period":"Next Month"
+
+
+	"New Campaign Name Edited": "campaign 2",
+	"New Template Name Edited": "Template 48 Edited",
+	"Send To Edited":[
+		"Mobile_Push"
+	],
+	"Template Message Edited":"Create Scheduled Template 1 message",
+	"Page Url Edited":"www.Scheduledtemplate1.com",
+	
+	
+	"Campaign Type Edited":"Promotional(Explicit)",
+	
+	"Batch Type Edited":"Single",
+	"New Scheduled Date Edited": "27",
+	"New Scheduled Time Edited": "12:25:PM",
+	"Test Campaign Radio Button Edited": "Group",
+	"Test Campaign Value Edited":"Mobile_Push",
+	"Time Period Edited":"Next Month"
+}
